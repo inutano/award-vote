@@ -16,10 +16,6 @@ class OpenScienceAward < Sinatra::Base
   set :haml, :format => :html5
   set :haml, :escape_html => true
   
-  configure do
-    enable :sessions
-  end
-  
   helpers do
     def app_root
       "#{env["rack.url_scheme"]}://#{env["HTTP_HOST"]}#{env["SCRIPT_NAME"]}"
@@ -31,26 +27,29 @@ class OpenScienceAward < Sinatra::Base
   end
   
   get "/" do
-    session.clear
     haml :index
   end
   
   post "/confirm" do
     @vote = params["vote"]
-    session[:vote] = @vote
     haml :confirm
   end
   
   post "/complete" do
-    @vote = session[:vote]
+    @vote = params["vote"]
+    
+    ballot = Ballot.new
+    ballot.mail = ""
+    ballot.db = ""
+    ballot.tool = ""
+    ballot.web = ""
+    ballot.mes = ""
+    ballot.save
+    
     haml :complete
-    session.clear
   end
   
   get "/result" do
     haml :result
-  end
-  
-  get "/data" do
   end
 end
