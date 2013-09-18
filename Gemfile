@@ -3,11 +3,13 @@ ruby "2.0.0"
 
 gem "sinatra"
 gem "sinatra-activerecord"
-gem "sqlite3"
 gem "rake"
 
 gem "haml"
 gem "sass"
 gem "rack-protection"
 
-gem "shotgun"
+group :development do
+  gem "sqlite3"
+  gem "shotgun"
+end
