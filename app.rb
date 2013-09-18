@@ -50,27 +50,33 @@ class OpenScienceAward < Sinatra::Base
   end
   
   post "/confirm" do
-    @database = params[:database]
-    @software = params[:software]
-    @web = params[:web]
+    @vote = { database: params[:database],
+              software: params[:software],
+              web: params[:web] }
     haml :confirm
   end
   
-  post "/complete" do
-    @vote = params["vote"]
+  post "/vote" do
+    @vote = { database: params[:database],
+              software: params[:software],
+              web: params[:web] }
     
     ballot = Ballot.new
-    ballot.mail = ""
-    ballot.db = ""
-    ballot.tool = ""
-    ballot.web = ""
-    ballot.mes = ""
+    ballot.db = @vote[:database].join("\t")
+    ballot.sw = @vote[:software].join("\t")
+    ballot.web = @vote[:web].join("\t")
+    ballot.mail = params[:mail]
+    ballot.mes = params[:message]
     ballot.save
     
-    haml :complete
+    haml :vote
   end
   
   get "/result" do
-    haml :result
+    all = Ballot.all
+    db = all.map{|r| r.db.gsub("\t","\n") }.join("\n")
+    sw = all.map{|r| r.sw.gsub("\t","\n") }.join("\n")
+    web = all.map{|r| r.web.gsub("\t","\n") }.join("\n")
+    db + sw + web
   end
 end
