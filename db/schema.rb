@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130917084507) do
+ActiveRecord::Schema.define(version: 20130918083307) do
 
   create_table "ballots", force: true do |t|
-    t.string   "mail"
     t.string   "db"
-    t.string   "tool"
+    t.string   "sw"
     t.string   "web"
+    t.string   "mail"
     t.string   "mes"
     t.datetime "created_at"
     t.datetime "updated_at"
