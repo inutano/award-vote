@@ -9,3 +9,5 @@ gem "rake"
 gem "haml"
 gem "sass"
 gem "rack-protection"
+
+gem "shotgun"
