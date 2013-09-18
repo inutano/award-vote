@@ -1,0 +1,29 @@
+Software,Developed by,URL,Recommended by,PMID,License,Open source?,other info
+CellDesigner,舟橋さん,http://www.celldesigner.org/,片山 <ktym@dbcls.jp>,17822394,,,
+GenomeJack,三菱スペースソフトウェア,http://www.mss.co.jp/businessfield/bioinformatics/solution/products/genomejack/,片山 <ktym@dbcls.jp>,,,,
+Ruby UCSC API,三嶋さん,https://rubygems.org/gems/bio-ucsc-api,片山 <ktym@dbcls.jp>,22994508,,,
+UTGB Toolkit,斉藤さん,http://utgenome.org/,片山 <ktym@dbcls.jp>,19497937,,,
+Local Package Manager,笠原さん@東大新領域,http://www.kasahara.ws/lpm/,"大田 <t.ohta@dbcls.rois.ac.jp>, 尾崎 <harukao@cb.k.u-tokyo.ac.jp>",,GPL v3 or Artistic Lisense,yes,重複をマージしました
+Bioconductor Code Search for Package Developers,二階堂さん@理研,http://search.bioconductor.JP,大田 <t.ohta@dbcls.rois.ac.jp>,,Artistic-2.0,yes,https://github.com/dritoshi/search.bioconductor.jp
+SPRAI,Takamasa Imai (東大笠原研?),http://zombie.cb.k.u-tokyo.ac.jp/sprai/,川島 <kwsm@dbcls.rois.ac.jp>,,,,
+GENIES,小寺正明,http://www.genome.jp/tools/genies/,川島 <kwsm@dbcls.rois.ac.jp>,22610856,,,
+PathPred,守屋勇樹,http://www.genome.jp/tools/pathpred/,川島 <kwsm@dbcls.rois.ac.jp>,20435670,,,
+MeSHRフレームワーク,BioCHackerson (二階堂・露崎・師田・仲里）,,露崎 <k.t.the.answer@hotmail.co.jp>,,Artistic-2.0,yes,
+metaSeq,BioCHackerson（二階堂・露崎）,,露崎 <k.t.the.answer@hotmail.co.jp>,,Artistic-2.0,yes,
+CLC Genomics Workbench,CLC bio,http://www.clcbio.com/products/clc-genomics-workbench/,露崎 <k.t.the.answer@hotmail.co.jp>,,,no,
+GENIE,荒川和晴さん,http://ws.g-language.org/genie/,尾崎 <harukao@cb.k.u-tokyo.ac.jp>,,,,http://www.g-language.org/wiki/
+BaseSpace Ruby SDK,片山＠DBCLS,https://developer.basespace.illumina.com/docs/content/documentation/sdk-samples/ruby-sdk-overview,片山 <ktym@dbcls.jp>,,,,
+BioRuby,後藤さん＠阪大ほか,http://bioruby.org/,片山 <ktym@dbcls.jp>,,,,
+Chrovis,西村さん＠テンクー,http://chrov.is/,片山 <ktym@dbcls.jp>,,,,
+GenoDive,岡本さん@DBCLS,http://genodive.org/,片山 <ktym@dbcls.jp>,,,,
+MAFFT,加藤さん,http://mafft.cbrc.jp/alignment/software/,荒川 <goau@sfc.keio.ac.jp>,,BSD,yes,
+Murasaki,Popendorfさん@慶応,http://murasaki.dna.bio.keio.ac.jp/wiki/,露崎 <k.t.the.answer@hotmail.co.jp>,2945767,BSD,yes,
+Genome Matcher,大坪さん@東北大,http://www.ige.tohoku.ac.jp/joho/gmProject/gmhomeJP.html,露崎 <k.t.the.answer@hotmail.co.jp>,2553346,?,yes (only for academic users),
+MEGA,田村さん@首都大学東京,http://www.megasoftware.net,露崎 <k.t.the.answer@hotmail.co.jp>,17488738,?,yes,
+TCC,門田幸二さん,http://www.iu.a.u-tokyo.ac.jp/~kadota/TCC/,緒方<norichika.o@gmail.com>,,,,
+QUMA,Yuichi Kumaki,http://quma.cdb.riken.jp/top/index_j.html,横山 <yokoyama@cb.k.u-tokyo.ac.jp>,18487274,,,バイサルファイト配列の解析ツール
+UTGB toolkit ,Taro L. Saito (@taroleo),http://utgenome.org/,横山 <yokoyama@cb.k.u-tokyo.ac.jp>,19497937,,,ゲノムブラウザー
+iPathways,,http://www.ipathways.org/,,,,,
+G-language System,Kazuharu Arakawa,g-language.org/wiki,石黒 <t10078si@sfc.keio.ac.jp>,,,,
+Samscope,Kris Popendorf and Yasubumi Sakakibara,http://samscope.dna.bio.keio.ac.jp/wiki/index.php/Samscope,twitter: @hinaichigo,22419785,,,
+Platanus genome assembler,,http://platanus.bio.titech.ac.jp/?lang=ja,twitter: @hinaichigo,,,,

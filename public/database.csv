@@ -1,0 +1,19 @@
+Database,Developed by,URL,Recommended by,PMID,License,Downloadable?
+BrainStars,粕川さん,http://brainstars.org/,片山 <ktym@dbcls.jp>,21858037,Creative Commons Attribution 2.1 Japan License,REST API and R client (Bioconductor package)
+CyanoBase,中尾さん,http://genome.microbedb.jp/cyanobase/,片山 <ktym@dbcls.jp>,19880388,,
+KOMICS,櫻井さん,http://www.kazusa.or.jp/komics/ja/,片山 <ktym@dbcls.jp>,,,
+PosMed,豊田さん,http://biosparql.org/PosMed/,片山 <ktym@dbcls.jp>,23761449,,
+日本酒ラベルコレクション,酒類総合研究所,http://www.nrib.go.jp/sake/sl/sl_top.htm,片山 <ktym@dbcls.jp>,,,
+ライフサイエンス辞書プロジェクト,金子周司さん,http://lsd.pharm.kyoto-u.ac.jp/ja/index.html,尾崎 <harukao@cb.k.u-tokyo.ac.jp>,,,
+MBGD,内山さん,http://mbgd.genome.ad.jp,尾崎 <harukao@cb.k.u-tokyo.ac.jp>,,,
+TogoGenome,岡本さん＠DBCLSほか,http://togogenome.org/,片山 <ktym@dbcls.jp>,,,
+dbTSS,山下さん,http://dbtss.hgc.jp,露崎 <k.t.the.answer@hotmail.co.jp>,22086958,,
+coxpresdb atted,大林さん,http://coxpresdb.jp,荒川 <gaou@sfc.keio.ac.jp>,,,
+kaikobase,nias,http://sgp.dna.affrc.go.jp/KAIKObase/,緒方<norichika.o@gmail.com>,,,
+三橋ノート画像データベース,niaes,http://mitsuhashi.niaes.affrc.go.jp/,緒方<norichika.o@gmail.com>,,,
+Biomasspedia,込山悠介さん(@YusukeKomiyama),http://biomasspedia.net/,横山 <yokoyama@cb.k.u-tokyo.ac.jp>,,,SPARQLエンドポイントを公開している
+H-DBAS,武田さん,http://www.h-invitational.jp/h-dbas/,石黒 <t10078si@sfc.keio.ac.jp>,19969536,,
+TargetMine,"水口さん",http://targetmine.nibio.go.jp/,野原 <nohara.sachio@mss.co.jp>,21408081,,
+GGGenome,内藤さん,http://gggenome.dbcls.jp/ja/,野原 <nohara.sachio@mss.co.jp>,,,
+野草雑草検索図鑑,千葉県立中央博物館・茨城大学教育学部,http://chiba-muse.jp/yasou2010/index.html,twitter: @hinaichigo,,,
+日本産アリ類画像データベース,吉村正志さん他,http://ant.edb.miyakyo-u.ac.jp/J/index.html,伊藤 <maori@nibio.go.jp>,,,"CD-ROMはあるようです。"
