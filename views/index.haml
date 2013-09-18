@@ -1,0 +1,187 @@
+!!! XML
+!!!
+%html
+  %head
+    %title Open Science Award presented by DBCLS
+    %meta{:charset => "utf-8", :content => "text/html", "http-equiv" => "content"}
+    %link{:rel => :stylesheet, :href => "#{app_root}/css/bootstrap.min.css", :type => "text/css"}
+    %link{:rel => :stylesheet, :href => "#{app_root}/css/font-awesome.min.css", :type => "text/css"}
+    %link{:rel => :stylesheet, :href => "#{app_root}/style.css", :type => "text/css"}
+    %script{ :src => "http://code.jquery.com/jquery-1.8.2.min.js" }
+    %script{ :src => "#{app_root}/js/bootstrap.min.js" }
+
+  %body
+    .container
+      %header
+        .row
+          .span.offset4
+            %img{ :src => "http://g86.dbcls.jp/~iNut/dono/dsw48.png" }
+        .row
+          .span.offset3
+            .page-header
+              %h1= "Open Science Award 2013"
+              %h2.text-right
+                %small= "presented by DBCLS"
+
+      %section.description
+        .row
+          .span.offset1
+            %h2              
+              %i.icon-thumbs-up-alt.icon-large
+              Open Science Awardについて
+            %p= "オープン・サイエンス・アワードは「論文として発表されていない/されにくい」けど日々ありがたく使っている(国内の)データベース・ソフトウェア・ウェブサイト(ブログやWikiなど)をコミュニティで表彰しよう！という企画です．自薦/他薦を問わずノミネートされた作品に対してみなさんで投票し，得票の多いアウトプットについてJSBi年会で表彰，作者に発表を依頼します．学生/研究者，ウェット/ドライ，アカデミック/ビジネス，JSBi会員/非会員を問わずにどなたでも投票できます．ノミネートされたものは，利用したことのがなくてもぜひチェックしてみてください．"
+      
+      %hr
+      %form{ :name => "voting", :action => "#{app_root}/confirm", :method => "POST" }
+        - nomin = nominates
+        %section.database
+          .row
+            .span.offset1
+              %h2
+                %i.icon-archive.icon-large
+                Database部門
+              %p= "あなたが「評価したい」データベースを選んでください(最大3つ)"
+  
+          - db = nomin[:database]
+          .row
+            .span3.offset1
+              %select{ :id => "database[]", :name => "database[]", :width => 66 }
+                %option{ :value => "" } -
+                - db.each do |item|
+                  %option{ :value => item[:name] }= item[:name]
+            - 2.times do
+              .span3
+                %select{ :id => "database[]", :name => "database[]", :width => 66 }
+                  %option{ :value => "" } -
+                  - db.each do |item|
+                    %option{ :value => item[:name] }= item[:name]
+              
+              
+          - db.each_slice(3) do |items|
+            %hr
+            .row
+              .span3.offset1
+                %h4= items[0][:name]
+                %p= items[0][:note]
+                %p= "developed by: " + items[0][:dev_by]
+                %p= items[0][:url]
+
+              - if items[1]
+                .span3
+                  %h4= items[1][:name]
+                  %p= items[1][:note]
+                  %p= "developed by: " + items[1][:dev_by]
+                  %p= items[1][:url]
+
+              - if items[2]
+                .span3
+                  %h4= items[2][:name]
+                  %p= items[2][:note]
+                  %p= "developed by: " + items[2][:dev_by]
+                  %p= items[2][:url]
+        
+        %hr
+        %section.software
+          .row
+            .span.offset1
+              %h2
+                %i.icon-wrench.icon-large
+                Software部門
+              %p= "あなたが「評価したい」ソフトウェアを選んでください(最大3つ)"
+        
+          - sw = nomin[:software]
+          .row
+            .span3.offset1
+              %select{ :id => "software[]", :name => "software[]", :width => 66 }
+                %option{ :value => "" } -
+                - sw.each do |item|
+                  %option{ :value => item[:name] }= item[:name]
+            - 2.times do
+              .span3
+                %select{ :id => "software[]", :name => "software[]", :width => 66 }
+                  %option{ :value => "" } -
+                  - sw.each do |item|
+                    %option{ :value => item[:name] }= item[:name]
+
+          - sw.each_slice(3) do |items|
+            %hr
+            .row
+              .span3.offset1
+                %h4= items[0][:name]
+                %p= items[0][:note]
+                %p= "developed by: " + items[0][:dev_by]
+                %p= items[0][:url]
+  
+              - if items[1]
+                .span3
+                  %h4= items[1][:name]
+                  %p= items[1][:note]
+                  %p= "developed by: " + items[1][:dev_by]
+                  %p= items[1][:url]
+
+              - if items[2]
+                .span3
+                  %h4= items[2][:name]
+                  %p= items[2][:note]
+                  %p= "developed by: " + items[2][:dev_by]
+                  %p= items[2][:url]
+  
+        %hr
+        %section.web
+          .row
+            .span.offset1
+              %h2
+                %i.icon-globe.icon-large
+                Web部門
+              %p= "あなたが「評価したい」ウェブサイトを選んでください(最大3つ)"
+  
+          - web = nomin[:web]
+          .row
+            .span3.offset1
+              %select{ :id => "web[]", :name => "web[]", :width => 66 }
+                %option{ :value => "" } -
+                - web.each do |item|
+                  %option{ :value => item[:name] }= item[:name]
+            - 2.times do
+              .span3
+                %select{ :id => "web[]", :name => "web[]", :width => 66 }
+                  %option{ :value => "" } -
+                  - web.each do |item|
+                    %option{ :value => item[:name] }= item[:name]
+  
+          
+          - web.each_slice(3) do |items|
+            %hr
+            .row
+              .span3.offset1
+                %h4= items[0][:name]
+                %p= items[0][:note]
+                %p= "developed by: " + items[0][:dev_by]
+                %p= items[0][:url]
+  
+              - if items[1]
+                .span3
+                  %h4= items[1][:name]
+                  %p= items[1][:note]
+                  %p= "developed by: " + items[1][:dev_by]
+                  %p= items[1][:url]
+
+              - if items[2]
+                .span3
+                  %h4= items[2][:name]
+                  %p= items[2][:note]
+                  %p= "developed by: " + items[2][:dev_by]
+                  %p= items[2][:url]
+        
+        %section.vote
+          .span.offset4
+            %button.btn.btn-large.btn-success{ :type => "submit" }= "Vote"
+      
+      %footer
+        powered by
+        %a{ :href => "http://dbcls.rois.ac.jp/" }
+          DBCLS
+        , project licensed under CC-BY 2.1 JP. /
+        Font Awesome by Dave Gandy - 
+        %a{ :href => "http://fortawesome.github.com/Font-Awesome" }
+          http://fortawesome.github.com/Font-Awesome
