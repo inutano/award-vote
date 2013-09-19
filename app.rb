@@ -66,7 +66,7 @@ class OpenScienceAward < Sinatra::Base
     haml :confirm
   end
   
-  post "/vote" do
+  post "/voted" do
     @vote = { database: params[:database],
               software: params[:software],
               web: params[:web] }
@@ -79,7 +79,7 @@ class OpenScienceAward < Sinatra::Base
     ballot.mes = params[:message]
     ballot.save
     
-    haml :vote
+    haml :voted
   end
   
   get "/result" do
