@@ -34,6 +34,11 @@ class OpenScienceAward < Sinatra::Base
       software: csv_importer("software"),
       web: csv_importer("web") }
   end
+  
+  def valid_vote?(array)
+    names = array.select{|n| n != "" }
+    names.size == names.uniq.size
+  end
 
   helpers do
     def app_root
@@ -50,9 +55,14 @@ class OpenScienceAward < Sinatra::Base
   end
   
   post "/confirm" do
-    @vote = { database: params[:database],
-              software: params[:software],
-              web: params[:web] }
+    db = params[:database]
+    sw = params[:software]
+    web = params[:web]
+    @cert = valid_vote?(db + sw + web)
+    
+    @vote = { database: db,
+              software: sw,
+              web: web }
     haml :confirm
   end
   
