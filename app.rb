@@ -24,7 +24,7 @@ class OpenScienceAward < Sinatra::Base
       line = line_n.split(",")
       { name: line[0],
         dev_by: line[1],
-        url: line[2].gsub("http://",""),
+        url: line[2],
         note: line[3] }
     end
   end
