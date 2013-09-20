@@ -65,27 +65,24 @@
             %hr
             .row
               .span3.offset1
-                %h4= items[0][:name]
+                %h4
+                  %a{ :href => items[0][:url] }= items[0][:name]
                 %p= items[0][:note]
                 %p= "developed by: " + items[0][:dev_by]
-                %p
-                  %a{ :href => items[0][:url] }= items[0][:url].gsub(/^http.+?\/\//,"")
 
               - if items[1]
                 .span3
-                  %h4= items[1][:name]
+                  %h4
+                    %a{ :href => items[1][:url] }= items[1][:name]
                   %p= items[1][:note]
                   %p= "developed by: " + items[1][:dev_by]
-                  %p
-                    %a{ :href => items[1][:url] }= items[1][:url].gsub(/^http.+?\/\//,"")
 
               - if items[2]
                 .span3
-                  %h4= items[2][:name]
+                  %h4
+                    %a{ :href => items[2][:url] }= items[2][:name]
                   %p= items[2][:note]
                   %p= "developed by: " + items[2][:dev_by]
-                  %p
-                    %a{ :href => items[2][:url] }= items[2][:url].gsub(/^http.+?\/\//,"")
         
         %hr
         %section.software
@@ -114,27 +111,24 @@
             %hr
             .row
               .span3.offset1
-                %h4= items[0][:name]
+                %h4
+                  %a{ :href => items[0][:url] }= items[0][:name]
                 %p= items[0][:note]
                 %p= "developed by: " + items[0][:dev_by]
-                %p
-                  %a{ :href => items[0][:url] }= items[0][:url].gsub(/^http.+?\/\//,"")
   
               - if items[1]
                 .span3
-                  %h4= items[1][:name]
+                  %h4
+                    %a{ :href => items[1][:url] }= items[1][:name]
                   %p= items[1][:note]
                   %p= "developed by: " + items[1][:dev_by]
-                  %p
-                    %a{ :href => items[1][:url] }= items[1][:url].gsub(/^http.+?\/\//,"")
 
               - if items[2]
                 .span3
-                  %h4= items[2][:name]
+                  %h4
+                    %a{ :href => items[2][:url] }= items[2][:name]
                   %p= items[2][:note]
                   %p= "developed by: " + items[2][:dev_by]
-                  %p
-                    %a{ :href => items[2][:url] }= items[2][:url].gsub(/^http.+?\/\//,"")
   
         %hr
         %section.web
@@ -164,27 +158,24 @@
             %hr
             .row
               .span3.offset1
-                %h4= items[0][:name]
+                %h4
+                  %a{ :href => items[0][:url] }= items[0][:name]
                 %p= items[0][:note]
                 %p= "developed by: " + items[0][:dev_by]
-                %p
-                  %a{ :href => items[0][:url] }= items[0][:url].gsub(/^http.+?\/\//,"")
   
               - if items[1]
                 .span3
-                  %h4= items[1][:name]
+                  %h4
+                    %a{ :href => items[1][:url] }= items[1][:name]
                   %p= items[1][:note]
                   %p= "developed by: " + items[1][:dev_by]
-                  %p
-                    %a{ :href => items[1][:url] }= items[1][:url].gsub(/^http.+?\/\//,"")
 
               - if items[2]
                 .span3
-                  %h4= items[2][:name]
+                  %h4
+                    %a{ :href => items[2][:url] }= items[2][:name]
                   %p= items[2][:note]
                   %p= "developed by: " + items[2][:dev_by]
-                  %p
-                    %a{ :href => items[2][:url] }= items[2][:url].gsub(/^http.+?\/\//,"")
         
         %section.vote
           .span.offset4
