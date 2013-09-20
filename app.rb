@@ -21,7 +21,7 @@ class OpenScienceAward < Sinatra::Base
     csv_raw = open(app_root + "/#{dsw}.csv", "r:utf-8").readlines
     csv_head = csv_raw.shift
     csv_raw.map do |line_n|
-      line = line_n.split(",")
+      line = line_n.split("\t")
       { name: line[0],
         dev_by: line[1],
         url: line[2],

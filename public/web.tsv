@@ -1,0 +1,22 @@
+Web	Developed by	URL	description	Recommended by	PMID	note
+Bioinformaticsのお勉強	今鉄男さん＠三重大	http://kappa-bioinformatics.blogspot.jp	Unixサーバのセッティングや、バイオインフォマティクスのメモ	露崎 <k.t.the.answer@hotmail.co.jp>		
+BioPapyrus	孫建強さん@東大	http://biopapyrus.net/	RNA-Seqデータを解析するR言語のパッケージを主に紹介している	露崎 <k.t.the.answer@hotmail.co.jp>		
+NGS Surfer's Wiki	藤井信之さん@遺伝研	http://cell-innovation.nig.ac.jp/wiki/tiki-index.php	NGS解析ツールのインストール方法や使用方法に関するwiki。トラブルシューティングに関する情報が充実	尾崎 <harukao@cb.k.u-tokyo.ac.jp>		
+Payao	松岡由希子さん＠SBI	http://www.payaologue.org	遺伝子制御、生化学ネットワークなどのモデルに対してコミュニティでタグ付けするためのシステム	matsumae@med.kitasato-u.ac.jp	20371497	PAYAOLOGUE is the community site to tag the gene-regulatory and biochemical network models using Payaosystem
+ryamadaの遺伝学・遺伝統計学メモ	山田亮さん@京大	http://d.hatena.ne.jp/ryamada22/	遺伝学・遺伝統計学の研究メモ	露崎 <k.t.the.answer@hotmail.co.jp>		
+Rで塩基配列解析/Rでマイクロアレイデータ解析	門田幸二さん@東大	http://www.iu.a.u-tokyo.ac.jp/~kadota/r_seq.html	R言語でのトランスクリプトーム解析の方法がまとめられている。サンプルコードが豊富	露崎 <k.t.the.answer@hotmail.co.jp>		
+script of bioinformatics	露崎弘毅さん@理科大	https://sites.google.com/site/scriptofbioinformatics/	バイオインフォマティクスの研究で利用するLinux， R言語， Perl言語などのスクリプト集	露崎 <k.t.the.answer@hotmail.co.jp>		
+Sequence Read Archive User Reference	大田達郎さん@DBCLS	https://github.com/inutano/sra_metadata_toolkit/wiki	NGSの公共DBであるSRAからデータをダウンロードする時に便利な情報がまとめられている	大田 <t.ohta@dbcls.rois.ac.jp>		がんばって書いたから自薦してもいいよね
+The Cat Way	二階堂愛さん@理研	http://cat.hackingisbelieving.org/	NGS解析等の研究メモ。講義資料も掲載	露崎 <k.t.the.answer@hotmail.co.jp>		
+Togo Picture Gallary	DBCLS 統合牧場 美術制作部	http://g86.dbcls.jp/~togoriv/	生物や実験器具などの図を、転載・改変・再利用可能なライセンスで提供。スライドやポスターを作るのに重宝する	matsumae@med.kitasato-u.ac.jp		
+TogoTV	DBCLS 統合牧場 番組制作部	http://togotv.dbcls.jp/ja/	ライフサイエンス関連のソフトウェアの使い方を動画で解説。ウェブサイトやツールがアップデートされると動画もアップデートされる。学会やシンポジウムでの講演動画も公開	matsumae@med.kitasato-u.ac.jp		
+Wolfeyes Bioinformatics beta	奥田裕樹さん@奈良先端大	http://yagays.github.io	NGS解析ソフトウェアのインストールや統計モデリングのメモ	露崎 <k.t.the.answer@hotmail.co.jp>		
+お家でできるMac Bookでやる次世代シーケンスデータ解析	緒方法親さん@日本バイオデータ	http://www.ipad-zine.com/b/1520/	MacでNGS解析を行う方法を初心者でも分かりやすい形で解説したおそらく業界初の個人による電子書籍。無料	緒方<norichika.o@gmail.com>		
+したっぱ昆虫細胞研究者のメモ	緒方法親さん@日本バイオデータ	http://insectcell.exblog.jp/	昆虫のゲノミクスに関する、wet実験、データ解析、論文などの紹介を行っている	露崎 <k.t.the.answer@hotmail.co.jp>		
+ショートリードの憂鬱	大崎研さん@トミーデジタルバイオロジー	http://shortreadbrothers.blogspot.jp/	Illumina， SOLID， 454のデータ解析に関する情報を提供している	露崎 <k.t.the.answer@hotmail.co.jp>		
+パックマンの挑戦	大崎研さん@トミーデジタルバイオロジー	http://pacbiobrothers.blogspot.jp/	Pac Bio RSシーケンサのニュースや技術的な情報を提供している	twitter: @hinaichigo		
+ほくそ笑む	hoxo_mさん	http://d.hatena.ne.jp/hoxo_m/	統計解析、機械学習、次世代シーケンサ、マイクロアレイ、R言語、Java言語のメモ	露崎 <k.t.the.answer@hotmail.co.jp>		
+ライフサイエンス 新着論文レビュー	飯田啓介さん@DBCLS	http://first.lifesciencedb.jp/	トップジャーナルに掲載された日本人を著者とする生命科学分野の論文の著者自身による日本語レビューを、だれでも自由に閲覧・利用できる形でいち早く公開	iida@dbcls.rois.ac.jp		自推です　他薦します!@maoringo
+ライフサイエンス 領域融合レビュー	飯田啓介さん@DBCLS	http://leading.lifesciencedb.jp/	生命科学において注目される分野・学問領域における最新の研究成果について、第一線の研究者の執筆による日本語のレビューを、だれでも自由に閲覧・利用できる形で、無料で公開	iida@dbcls.rois.ac.jp		自推です   他薦します!@maoringo
+ライフサイエンスQA（β）	DBCLS	http://qa.lifesciencedb.jp	ライフサイエンス研究にまつわる疑問や質問、それらへの回答を共有するQAサイト	尾崎 <harukao@cb.k.u-tokyo.ac.jp>		
+井上潤のホームページ 	井上潤さん@OIST	http://www.geocities.jp/ancientfishtree/	配列データで系統解析をする際に利用するソフトウェアを多数紹介している	露崎 <k.t.the.answer@hotmail.co.jp>		
