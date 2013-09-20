@@ -1,29 +1,30 @@
-Software,Developed by,URL,Recommended by,PMID,License,Open source?,other info
-CellDesigner,舟橋さん,http://www.celldesigner.org/,片山 <ktym@dbcls.jp>,17822394,,,
-GenomeJack,三菱スペースソフトウェア,http://www.mss.co.jp/businessfield/bioinformatics/solution/products/genomejack/,片山 <ktym@dbcls.jp>,,,,
-Ruby UCSC API,三嶋さん,https://rubygems.org/gems/bio-ucsc-api,片山 <ktym@dbcls.jp>,22994508,,,
-UTGB Toolkit,斉藤さん,http://utgenome.org/,片山 <ktym@dbcls.jp>,19497937,,,
-Local Package Manager,笠原さん@東大新領域,http://www.kasahara.ws/lpm/,"大田 <t.ohta@dbcls.rois.ac.jp>, 尾崎 <harukao@cb.k.u-tokyo.ac.jp>",,GPL v3 or Artistic Lisense,yes,重複をマージしました
-Bioconductor Code Search for Package Developers,二階堂さん@理研,http://search.bioconductor.JP,大田 <t.ohta@dbcls.rois.ac.jp>,,Artistic-2.0,yes,https://github.com/dritoshi/search.bioconductor.jp
-SPRAI,Takamasa Imai (東大笠原研?),http://zombie.cb.k.u-tokyo.ac.jp/sprai/,川島 <kwsm@dbcls.rois.ac.jp>,,,,
-GENIES,小寺正明,http://www.genome.jp/tools/genies/,川島 <kwsm@dbcls.rois.ac.jp>,22610856,,,
-PathPred,守屋勇樹,http://www.genome.jp/tools/pathpred/,川島 <kwsm@dbcls.rois.ac.jp>,20435670,,,
-MeSHRフレームワーク,BioCHackerson (二階堂・露崎・師田・仲里）,,露崎 <k.t.the.answer@hotmail.co.jp>,,Artistic-2.0,yes,
-metaSeq,BioCHackerson（二階堂・露崎）,,露崎 <k.t.the.answer@hotmail.co.jp>,,Artistic-2.0,yes,
-CLC Genomics Workbench,CLC bio,http://www.clcbio.com/products/clc-genomics-workbench/,露崎 <k.t.the.answer@hotmail.co.jp>,,,no,
-GENIE,荒川和晴さん,http://ws.g-language.org/genie/,尾崎 <harukao@cb.k.u-tokyo.ac.jp>,,,,http://www.g-language.org/wiki/
-BaseSpace Ruby SDK,片山＠DBCLS,https://developer.basespace.illumina.com/docs/content/documentation/sdk-samples/ruby-sdk-overview,片山 <ktym@dbcls.jp>,,,,
-BioRuby,後藤さん＠阪大ほか,http://bioruby.org/,片山 <ktym@dbcls.jp>,,,,
-Chrovis,西村さん＠テンクー,http://chrov.is/,片山 <ktym@dbcls.jp>,,,,
-GenoDive,岡本さん@DBCLS,http://genodive.org/,片山 <ktym@dbcls.jp>,,,,
-MAFFT,加藤さん,http://mafft.cbrc.jp/alignment/software/,荒川 <goau@sfc.keio.ac.jp>,,BSD,yes,
-Murasaki,Popendorfさん@慶応,http://murasaki.dna.bio.keio.ac.jp/wiki/,露崎 <k.t.the.answer@hotmail.co.jp>,2945767,BSD,yes,
-Genome Matcher,大坪さん@東北大,http://www.ige.tohoku.ac.jp/joho/gmProject/gmhomeJP.html,露崎 <k.t.the.answer@hotmail.co.jp>,2553346,?,yes (only for academic users),
-MEGA,田村さん@首都大学東京,http://www.megasoftware.net,露崎 <k.t.the.answer@hotmail.co.jp>,17488738,?,yes,
-TCC,門田幸二さん,http://www.iu.a.u-tokyo.ac.jp/~kadota/TCC/,緒方<norichika.o@gmail.com>,,,,
-QUMA,Yuichi Kumaki,http://quma.cdb.riken.jp/top/index_j.html,横山 <yokoyama@cb.k.u-tokyo.ac.jp>,18487274,,,バイサルファイト配列の解析ツール
-UTGB toolkit ,Taro L. Saito (@taroleo),http://utgenome.org/,横山 <yokoyama@cb.k.u-tokyo.ac.jp>,19497937,,,ゲノムブラウザー
-iPathways,,http://www.ipathways.org/,,,,,
-G-language System,Kazuharu Arakawa,g-language.org/wiki,石黒 <t10078si@sfc.keio.ac.jp>,,,,
-Samscope,Kris Popendorf and Yasubumi Sakakibara,http://samscope.dna.bio.keio.ac.jp/wiki/index.php/Samscope,twitter: @hinaichigo,22419785,,,
-Platanus genome assembler,,http://platanus.bio.titech.ac.jp/?lang=ja,twitter: @hinaichigo,,,,
+Software,Developed by,URL,note
+Allie,山本泰智さん@DBCLS,http://allie.dbcls.jp/,
+BaseSpace Ruby SDK,片山俊明さん＠DBCLSほか,https://developer.basespace.illumina.com/docs/content/documentation/sdk-samples/ruby-sdk-overview,BaseSpace Ruby SDK is a Ruby based Software Development Kit to be used in the development of Apps and scripts for working with Illumina's BaseSpace cloud-computing solution for next-gen sequencing data analysis.
+Bioconductor Code Search for Package Developers,二階堂愛さん@理研,http://search.bioconductor.JP,Full-text search engine for souce codes of all bioconductor packages.
+BioRuby,後藤直久さん＠阪大ほか,http://bioruby.org/,BioRuby comes with a comprehensive set of free development tools and libraries for bioinformatics and molecular biology， for the Ruby programming language.
+CellDesigner,舟橋啓さん＠慶應大,http://www.celldesigner.org/,CellDesigner is a structured diagram editor for drawing gene-regulatory and biochemical networks. Networks are drawn based on the process diagram， with graphical notation system proposed by Kitano， and are stored using the Systems Biology Markup Language (SBML)， a standard for representing models of biochemical and gene-regulatory networks.
+Chrovis,西村邦裕さん＠テンクー,http://chrov.is/,Chrovis is a cloud service of genome analysis and visualization for researchers.
+DBCLS SRA Metadata Search code: Soylatte,大田達郎さん@DBCLS,http://sra.dbcls.jp/search,
+G-language System,荒川和晴さん＠慶應大,g-language.org/wiki,G-language Genome Analysis Environment provides a greater variety of useful genome analysis tools compared to most existing analysis software packages， and is also easily pluggable. All of its tools are accessible as Perl modules
+GENIES,小寺正明さん＠京大,http://www.genome.jp/tools/genies/,The GENIES (Gene Network Inference Engine based on Supervised Analysis) enables us to predict potential functional associations between genes， based on other genomic data or high-throughput experimental data such as phylogenetic profiles and gene expression profiles.
+genoDive,岡本忍さん@DBCLS,http://genodive.org/,genoDive suite are applications for veiwing genome structures and comprehensive genome information. 
+Genome Matcher,大坪嘉行さん@東北大,http://www.ige.tohoku.ac.jp/joho/gmProject/gmhomeJP.html,GenoemMatcherはゲノムを比較した結果をグラフィカルに表示するソフトウエアです。また、比較ゲノムとは関係がない機能もいろいろと追加しています。これらは作者が自らの研究用に作成したものですので、多くの方に便利だと思っていただけるのでないかと思います。
+GenomeJack,三菱スペースソフトウェア,http://genomejack.net/,
+GGGenome,内藤雄樹さん@DBCLS,http://gggenome.dbcls.jp/ja/,ゲノム等の塩基配列を高速に検索するウェブサービス。数塩基のミスマッチ、挿入、欠失を許容した配列検索が可能。検索結果はHTMLのほか、タブ区切りテキストやJSONでも取得できる。
+iPathways,SBI,http://www.ipathways.org/,
+Local Package Manager,笠原雅弘さん@東大,http://www.kasahara.ws/lpm/,Linux を使っていて、root は持っていないけど新規にソフトをインストールしたいと思ったことはありませんか？ ちゃんとパッケージ化されていないソフトをインストールするのが面倒だと思ったことはありませんか？ あなたの環境でコンパイラエラーを回避するために何度も同じパッチを当てなければならなかったことはありませんか？ そんな貴方に LPM は手をさしのべます。
+MAFFT,加藤和貴さん＠CBRC/九大,http://mafft.cbrc.jp/alignment/software/,MAFFT is a multiple sequence alignment program for unix-like operating systems.  It offers a range of multiple alignment methods， L-INS-i (accurate; for alignment of <∼200 sequences)， FFT-NS-2 (fast; for alignment of <∼10，000 sequences)， etc.
+MEGA,田村浩一郎さん@首都大学東京,http://www.megasoftware.net,MEGA is an integrated tool for conducting sequence alignment， inferring phylogenetic trees， mining web-based databases， estimating rates of molecular evolution， inferring ancestral sequences， and testing evolutionary hypotheses.
+Murasaki,Kris Popendorfさん@慶應大ほか,http://murasaki.dna.bio.keio.ac.jp/wiki/,Murasaki is an anchor alignment program that is exteremely fast (17 CPU hours for whole Human x Mouse genome (with 40 nodes: 35 wall minutes)， or 8 mammals in 21 CPU hours (42 wall minutes))， scalable (Arbitrarily parallelizable across multiple nodes using MPI)， memory efficient， (Even a single node with 16GB of ram can handle over 1Gbp of sequence)， unlimited by pattern length or selection， repeat tolerant
+PathPred,守屋勇樹さん＠京大,http://www.genome.jp/tools/pathpred/,PathPred is a web-based server to predict plausible enzyme-catalyzed reaction pathways from a query compound using the information of RDM patterns and chemical structure alignments of substrate-product pairs. This server provides plausible reactions and transformed compounds， and displays all predicted reaction pathways in tree-shaped graph.
+Platanus genome assembler,梶谷嶺さん＠東工大,http://platanus.bio.titech.ac.jp/?lang=ja,
+QUMA,熊木勇一さん＠京大,http://quma.cdb.riken.jp/top/index_j.html,簡単に使えるバイサルファイト配列の解析ツールで、アライメント、CpGメチル化状態の判定、図の作成といったことが短時間で行えます。
+Ruby UCSC API,三嶋博之さん＠長崎大,https://rubygems.org/gems/bio-ucsc-api,Ruby UCSC API: accessing the UCSC Genome Database using Ruby
+Samscope,Kris Popendorfさん＠慶應大ほか,http://samscope.dna.bio.keio.ac.jp/wiki/index.php/Samscope,Samscope is a lightweight SAM/BAM file viewer that makes visually exploring next generation sequencing data intuitive and maybe even fun!
+SPRAI,今井飛将さん＠東大,http://zombie.cb.k.u-tokyo.ac.jp/sprai/,Sprai (single-pass read accuracy improver) is a tool to correct sequencing errors in single-pass reads for de novo assembly.
+TCC,門田幸二さん＠東大,http://www.iu.a.u-tokyo.ac.jp/~kadota/TCC/,The R package， TCC (Sun et al.， 2013) provides users with a robust and accurate framework to perform differential expression analysis of tag count data.
+TogoDB,片山俊明さん＠DBCLS,http://togodb.org/,
+TogoWS,片山俊明さん＠DBCLSほか,http://togows.org/,
+UTGB Toolkit,斉藤太郎さん＠東大,http://utgenome.org/,UTGB (University of Tokyo Genome Browser) Toolkit is an open-source software for developing personalized genome browsers that work in web browsers. 
+逐次PubMed/MEDLINE表現検索 inMeXes,山本泰智さん@DBCLS,http://docman.dbcls.jp/im/,

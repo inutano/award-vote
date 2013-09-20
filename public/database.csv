@@ -1,19 +1,19 @@
-Database,Developed by,URL,Recommended by,PMID,License,Downloadable?
-BrainStars,粕川さん,http://brainstars.org/,片山 <ktym@dbcls.jp>,21858037,Creative Commons Attribution 2.1 Japan License,REST API and R client (Bioconductor package)
-CyanoBase,中尾さん,http://genome.microbedb.jp/cyanobase/,片山 <ktym@dbcls.jp>,19880388,,
-KOMICS,櫻井さん,http://www.kazusa.or.jp/komics/ja/,片山 <ktym@dbcls.jp>,,,
-PosMed,豊田さん,http://biosparql.org/PosMed/,片山 <ktym@dbcls.jp>,23761449,,
-日本酒ラベルコレクション,酒類総合研究所,http://www.nrib.go.jp/sake/sl/sl_top.htm,片山 <ktym@dbcls.jp>,,,
-ライフサイエンス辞書プロジェクト,金子周司さん,http://lsd.pharm.kyoto-u.ac.jp/ja/index.html,尾崎 <harukao@cb.k.u-tokyo.ac.jp>,,,
-MBGD,内山さん,http://mbgd.genome.ad.jp,尾崎 <harukao@cb.k.u-tokyo.ac.jp>,,,
-TogoGenome,岡本さん＠DBCLSほか,http://togogenome.org/,片山 <ktym@dbcls.jp>,,,
-dbTSS,山下さん,http://dbtss.hgc.jp,露崎 <k.t.the.answer@hotmail.co.jp>,22086958,,
-coxpresdb atted,大林さん,http://coxpresdb.jp,荒川 <gaou@sfc.keio.ac.jp>,,,
-kaikobase,nias,http://sgp.dna.affrc.go.jp/KAIKObase/,緒方<norichika.o@gmail.com>,,,
-三橋ノート画像データベース,niaes,http://mitsuhashi.niaes.affrc.go.jp/,緒方<norichika.o@gmail.com>,,,
-Biomasspedia,込山悠介さん(@YusukeKomiyama),http://biomasspedia.net/,横山 <yokoyama@cb.k.u-tokyo.ac.jp>,,,SPARQLエンドポイントを公開している
-H-DBAS,武田さん,http://www.h-invitational.jp/h-dbas/,石黒 <t10078si@sfc.keio.ac.jp>,19969536,,
-TargetMine,"水口さん",http://targetmine.nibio.go.jp/,野原 <nohara.sachio@mss.co.jp>,21408081,,
-GGGenome,内藤さん,http://gggenome.dbcls.jp/ja/,野原 <nohara.sachio@mss.co.jp>,,,
-野草雑草検索図鑑,千葉県立中央博物館・茨城大学教育学部,http://chiba-muse.jp/yasou2010/index.html,twitter: @hinaichigo,,,
-日本産アリ類画像データベース,吉村正志さん他,http://ant.edb.miyakyo-u.ac.jp/J/index.html,伊藤 <maori@nibio.go.jp>,,,"CD-ROMはあるようです。"
+Database,Developed by,URL,description
+Biomasspedia,込山悠介さん＠東大,http://biomasspedia.net/,セマンティック・ウェブ技術を利用し、バイオマスを対象とした論文、データ、政府統計情報や地理的情報をLODとして公開
+BrainStars,粕川雄也さん@理研,http://brainstars.org/,成体マウスの様々な脳領域における遺伝子発現を包括的に解析したデータを公開している
+coxpresdb/atted,大林武さん＠東北大,http://coxpresdb.jp,DNAマイクロアレイの結果から計算された、様々な実験条件での遺伝子の共発現をデータベース化。ヒトから酵母までの11生物種に対応
+CyanoBase,藤澤貴智さん＠遺伝研ほか,http://genome.microbedb.jp/cyanobase/,かずさDNA研究所で解読したシアノバクテリアを含む、37種類の藍藻、緑色硫黄細菌、紅色非硫黄細菌の全ゲノム配列解析結果と文献から収集したアノテーションを収録
+dbTSS,山下理宇さん＠東北大,http://dbtss.hgc.jp,ヒトの転写開始点(TSS)のデータベース。TSS-Seq法で実験的に検証したデータを公開。ENCODEデータも組み込んでいる
+H-DBAS,武田淳一さん＠産総研,http://www.h-invitational.jp/h-dbas/,H-InvDBの配列データに基づく選択的スプライシング(alternative splicing; AS)のデータベース
+kaikobase,農業生物資源研究所,http://sgp.dna.affrc.go.jp/KAIKObase/,農業生物資源研究所による、カイコゲノム情報のデータベース。最近完全長cDNA情報が追加された
+KOMICS,櫻井望さん＠かずさDNA研,http://www.kazusa.or.jp/komics/ja/,メタボロミクスに関してかずさDNA研究所で開発された質量分析のデータベースや解析ソフトウェアを取りまとめたポータルサイト
+MBGD,内山郁夫さん＠基生研,http://mbgd.genome.ad.jp,微生物の比較ゲノム解析結果を収録したデータベース。約600の生物種、約200万の遺伝子に加え、数十億件におよぶそれら遺伝子間のホモロジーデータが登録されている
+PosMed,豊田哲郎さん＠理研,http://biosparql.org/PosMed/,任意のキーワードから、対応する遺伝子、染色体領域、生体内相互作用を推論し検索結果をランキング、文献情報とともに出力する
+R graphical manual,小笠原理さん@遺伝研,http://rgm3.lab.nig.ac.jp/RGM/,R言語のパッケージ全体を対象に、それぞれの関数が持つ機能を可視化するため、各パッケージに同梱されるマニュアルのExampleを全て実行し、その結果をDB化
+TargetMine,水口賢司さん@医薬基盤研,http://targetmine.nibio.go.jp/,創薬ターゲットの絞り込みを支援する統合データウェアハウス。世界の主要な16のライフサイエンス関連データベースを統合的に検索できる
+TogoGenome,岡本忍さん＠DBCLSほか,http://togogenome.org/,ゲノム情報をセマンティック・ウェブを用いて統合したデータベース。微生物を中心に2600生物種のゲノム、UniProtのアノテーション、環境や培地などの各種オントロジーを開発・集積
+ライフサイエンス辞書プロジェクト,金子周司さん＠京大,http://lsd.pharm.kyoto-u.ac.jp/ja/index.html,LSDプロジェクトでは様々な学問領域の研究者が協力しあい、広範な生命科学（ライフサイエンス）の学問領域で使われる専門用語、対訳、用法、各種の統計情報を分析、収集するとともに、実際に電子メディアで活用することのできる電子辞書やパソコンツールを開発し、可能な限り無償で配布しています。
+三橋ノート画像データベース,農業環境技術研究所,http://mitsuhashi.niaes.affrc.go.jp/,"故 三橋伸治氏によって作成された日本産昆虫に関する文献目録。全476冊、推定99
+日本産アリ類画像データベース,吉村正志さん＠宮城教育大ほか,http://ant.edb.miyakyo-u.ac.jp/J/index.html,1995年公開。日本産アリ類の画像データベースであり、専門知識がなくても使用できる検索方法を用意し、分類専門家以外の一般の人も閲覧しやすい
+日本酒ラベルコレクション,酒類総合研究所,http://www.nrib.go.jp/sake/sl/sl_top.htm,平成14年に行われた「価格及び商品ラベルに関する研究」において収集された全国の日本酒ラベル、表示内容を元にした日本酒のラベルを読むときの参考とするための用語辞典
+野草・雑草検索図鑑,千葉県立中央博物館・茨城大学教育学部,http://chiba-muse.jp/yasou2010/index.html,千葉県立中央博物館の学芸員の方が中心となって作っている野草・雑草のデータベース。形態や名前、分類から検索が可能
