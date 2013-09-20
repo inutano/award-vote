@@ -12,6 +12,7 @@ genoDive,岡本忍さん@DBCLS,http://genodive.org/,genoDive suite are applicati
 Genome Matcher,大坪嘉行さん@東北大,http://www.ige.tohoku.ac.jp/joho/gmProject/gmhomeJP.html,GenoemMatcherはゲノムを比較した結果をグラフィカルに表示するソフトウエアです。また、比較ゲノムとは関係がない機能もいろいろと追加しています。これらは作者が自らの研究用に作成したものですので、多くの方に便利だと思っていただけるのでないかと思います。
 GenomeJack,三菱スペースソフトウェア,http://genomejack.net/,
 GGGenome,内藤雄樹さん@DBCLS,http://gggenome.dbcls.jp/ja/,ゲノム等の塩基配列を高速に検索するウェブサービス。数塩基のミスマッチ、挿入、欠失を許容した配列検索が可能。検索結果はHTMLのほか、タブ区切りテキストやJSONでも取得できる。
+inMeXes,山本泰智さん@DBCLS,http://docman.dbcls.jp/im/,
 iPathways,SBI,http://www.ipathways.org/,
 Local Package Manager,笠原雅弘さん@東大,http://www.kasahara.ws/lpm/,Linux を使っていて、root は持っていないけど新規にソフトをインストールしたいと思ったことはありませんか？ ちゃんとパッケージ化されていないソフトをインストールするのが面倒だと思ったことはありませんか？ あなたの環境でコンパイラエラーを回避するために何度も同じパッチを当てなければならなかったことはありませんか？ そんな貴方に LPM は手をさしのべます。
 MAFFT,加藤和貴さん＠CBRC/九大,http://mafft.cbrc.jp/alignment/software/,MAFFT is a multiple sequence alignment program for unix-like operating systems.  It offers a range of multiple alignment methods， L-INS-i (accurate; for alignment of <∼200 sequences)， FFT-NS-2 (fast; for alignment of <∼10，000 sequences)， etc.
@@ -27,4 +28,3 @@ TCC,門田幸二さん＠東大,http://www.iu.a.u-tokyo.ac.jp/~kadota/TCC/,The R
 TogoDB,片山俊明さん＠DBCLS,http://togodb.org/,
 TogoWS,片山俊明さん＠DBCLSほか,http://togows.org/,
 UTGB Toolkit,斉藤太郎さん＠東大,http://utgenome.org/,UTGB (University of Tokyo Genome Browser) Toolkit is an open-source software for developing personalized genome browsers that work in web browsers. 
-逐次PubMed/MEDLINE表現検索 inMeXes,山本泰智さん@DBCLS,http://docman.dbcls.jp/im/,
