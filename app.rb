@@ -18,7 +18,7 @@ class OpenScienceAward < Sinatra::Base
   set :haml, :escape_html => true
   
   def csv_importer(dsw)
-    csv_raw = open(app_root + "/#{dsw}.csv", "r:utf-8").readlines
+    csv_raw = open(app_root + "/#{dsw}.tsv", "r:utf-8").readlines
     csv_head = csv_raw.shift
     csv_raw.map do |line_n|
       line = line_n.split("\t")
