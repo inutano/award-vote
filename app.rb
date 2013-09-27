@@ -5,6 +5,7 @@ require "sinatra/activerecord"
 require "haml"
 require "sass"
 
+require "json"
 require "open-uri"
 require "./ballot"
 
@@ -82,11 +83,28 @@ class OpenScienceAward < Sinatra::Base
     haml :voted
   end
   
+  get "/count" do
+    categ = params[:category]
+    all = Ballot.all
+
+    db_votes = all.map{|r| r.send(categ.intern).split("\t") }.flatten
+    votes_count = {}
+    db_votes.each do |vote|
+      votes_count[vote] ||= 0
+      votes_count[vote] += 1
+    end
+    
+    content_type "application/json"
+    JSON.dump(votes_count.sort_by{|k,v| v }.reverse)
+  end
+  
   get "/result" do
     all = Ballot.all
-    db = all.map{|r| r.db.gsub("\t","\n") }.join("\n")
-    sw = all.map{|r| r.sw.gsub("\t","\n") }.join("\n")
-    web = all.map{|r| r.web.gsub("\t","\n") }.join("\n")
-    db + sw + web
+    @num_of_votes = all.length
+    @db = JSON.load(open(app_root + "/count?category=db"))
+    @sw = JSON.load(open(app_root + "/count?category=sw"))
+    @web = JSON.load(open(app_root + "/count?category=web"))
+    content_type "application/json"
+    JSON.dump({ votes: @num_of_votes, db: @db, dw: @sw, web: @web })
   end
 end
