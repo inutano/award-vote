@@ -1,0 +1,201 @@
+!!! XML
+!!!
+%html
+  %head
+    %title Open Science Award presented by DBCLS
+    %meta{:charset => "utf-8", :content => "text/html", "http-equiv" => "content"}
+    %link{:rel => :stylesheet, :href => "#{app_root}/css/bootstrap.min.css", :type => "text/css"}
+    %link{:rel => :stylesheet, :href => "#{app_root}/css/font-awesome.min.css", :type => "text/css"}
+    %link{:rel => :stylesheet, :href => "#{app_root}/style.css", :type => "text/css"}
+    %script{ :src => "http://code.jquery.com/jquery-1.8.2.min.js" }
+    %script{ :src => "#{app_root}/js/bootstrap.min.js" }
+    %script{ :src => "#{app_root}/js/d3.v3.min.js" }
+    %script{ :src => "http://labratrevenge.com/d3-tip/javascripts/d3.tip.min.js" }
+    
+  %body
+    .container
+      %header
+        .row
+          .span.offset4
+            %a{ :href => app_root }
+              %img{ :src => "https://raw.github.com/inutano/jsbi2013/master/src/dsw48.png" }
+        .row
+          .span.offset3
+            .page-header
+              %h1= "Open Science Award 2013"
+              %h2.text-right
+                %small= "presented by DBCLS"
+      
+      %section
+        .row
+          .span8.offset2
+            %h2= "たくさんの投票ありがとうございました！"
+            %p.num
+              = "今回投票して下さった方の合計は…"
+              %span.num-of-votes
+                = @num_of_votes
+              = "人です！"
+
+        %hr
+        .row
+          .span8.offset2
+            %p= "みんなで決める「このデータベース・ソフトウェア・ウェブサイトがすごい！」オープン・サイエンス・アワード，たくさんのご参加をいただきありがとうござました！各部門で得票の多かった10のプロダクトを発表します！"
+        %hr
+        
+        - pole_result = JSON.load(open(app_root+"/getresult"))
+        - url_hash = get_url_hash
+        .row
+          - db = pole_result[0]["data"]
+          %h2= "データベース部門"
+          %p= "総投票数: " + db.size.to_s
+          .span6
+            .db-bar
+          .span6
+            %table.table.table-hover
+              %thead
+                %tr
+                  %th Pos.
+                  %th Title
+                  %th Points
+              %tbody
+                - p_db = 0
+                - db.first(10).each do |record|
+                  %tr
+                    - p_db += 1
+                    %td= p_db.to_s
+                    %td
+                      %a{ :href => url_hash[record[0]] }= record[0]
+                    %td= record[1]
+        %hr
+        .row
+          - sw = pole_result[1]["data"]
+          %h2= "ソフトウェア部門"
+          %p= "総投票数: " + sw.size.to_s
+          .span6
+            .sw-bar
+          .span6
+            %table.table.table-hover
+              %thead
+                %tr
+                  %th Pos.
+                  %th Title
+                  %th Points
+              %tbody
+                - p_sw = 0
+                - sw.first(10).each do |record|
+                  %tr
+                    - p_sw += 1
+                    %td= p_sw.to_s
+                    %td
+                      %a{ :href => url_hash[record[0]] }= record[0]
+                    %td= record[1]
+        %hr
+        .row
+          - web = pole_result[2]["data"]
+          %h2= "ウェブ部門"
+          %p= "総投票数: " + web.size.to_s
+          .span6
+            .web-bar
+          .span6
+            %table.table.table-hover
+              %thead
+                %tr
+                  %th Pos.
+                  %th Title
+                  %th Points
+              %tbody
+                - p_web = 0
+                - web.first(10).each do |record|
+                  %tr
+                    - p_web += 1
+                    %td= p_web.to_s
+                    %td
+                      %a{ :href => url_hash[record[0]] }= record[0]
+                    %td= record[1]
+      
+        %hr
+        .row
+          .span8.offset2
+            %p
+              = "各部門得票数上位3名の方には，10/31に東京・船堀で行われるJSBi年会でのご講演を依頼します。ぜひ，会場に足を運んで受賞者のスピーチをお聞きください。また，同時開催するクイックハック・開発コンペティション，BioHackもまだまだ応募をお待ちしております。詳しくは"
+              %a{ :href => "https://github.com/dbcls/jsbi2013/wiki/BioHack" }
+                = "こちら"
+        
+        
+        
+        
+      :javascript
+        var margin = { top: 40, right: 20, bottom: 30, left: 40 },
+            width = 450 - margin.left - margin.right,
+            height = 350 - margin.top - margin.bottom;
+        
+        var xScale = d3.scale.ordinal()
+                             .rangeRoundBands([0, width], .1);
+        
+        var yScale = d3.scale.linear()
+                             .range([height, 0])
+                             .nice();
+        
+        var xAxis = d3.svg.axis()
+                          .scale(xScale)
+                          .orient("bottom");
+        
+        var yAxis = d3.svg.axis()
+                          .scale(yScale)
+                          .orient("left")
+                          .ticks(3);
+        
+        var tip = d3.tip()
+                    .attr("class", "d3-tip")
+                    .offset([-10, 0])
+                    .html(function(d){
+                      return d[0] + ": " + d[1];
+                    })
+        
+        d3.json("#{app_root}/getresult", function(error, poleResult){
+          poleResult.forEach(function(dataSet){
+            var svg = d3.select("." + dataSet.category + "-bar")
+                          .append("svg")
+                          .attr("width", width + margin.left + margin.right)
+                          .attr("height", height + margin.top + margin.bottom)
+                            .append("g")
+                            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+            
+            svg.call(tip);
+            
+            data = dataSet.data
+            xScale.domain(data.map(function(d){ return d[0]; }));
+            yScale.domain([0, d3.max(data, function(d){ return d[1]; })]);
+            
+            svg.append("g")
+               .attr("class", "y axis")
+               .call(yAxis)
+                 .append("text")
+                 .attr("transform", "rotate(-90)")
+                 .attr("y", 6)
+                 .attr("dy", ".47em")
+                 .style("text-anchor", "end")
+                 .text("Votes");
+            
+            svg.selectAll(".bar")
+              .data(data.slice(0,10))
+              .enter()
+              .append("rect")
+              .attr("class", "bar")
+              .attr("x", function(d){ return xScale(d[0]); })
+              .attr("width", xScale.rangeBand())
+              .attr("y", function(d){ return yScale(d[1]); })
+              .attr("height", function(d){ return height - yScale(d[1]); })
+              .on("mouseover", tip.show)
+              .on("mouseout", tip.hide)
+          });
+        });
+        
+      %footer
+        powered by
+        %a{ :href => "http://dbcls.rois.ac.jp/" }
+          DBCLS
+        , project licensed under CC-BY 2.1 JP. /
+        Font Awesome by Dave Gandy - 
+        %a{ :href => "http://fortawesome.github.com/Font-Awesome" }
+          http://fortawesome.github.com/Font-Awesome

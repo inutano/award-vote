@@ -20,34 +20,59 @@ textarea
   width: 80%
   height: 40px
 
-// filter.haml
-.donut
-  text:
-    align: center
-  margin:
-    top: 1.0em
-    bottom: 1.5em
+// d3 visualization
+.axis path, .axis line
+  fill: none
+  stroke: #000
+  shape-rendering: crispEdges
 
-// project.haml
-.paper_linkout, .data_retrieve
+.bar
+  fill: lightskyblue
+
+.bar:hover
+  fill: lightcyan
+
+.x.axis path
+  display: none
+
+.d3-tip
+  line-height: 1
+  font-weight: bold
+  padding: 12px
+  background: rgba(0,0,0,0.6)
+  color: #fff
+  border-radius: 2px
+
+.d3-tip:after
+  box-sizing: border-box
+  display: inline
+  font-size: 10px
+  width: 100%
+  line-height: 1
+  color: rgba(0,0,0,0.6)
+  content: "\25BC"
+  position: absolute
+  text-align: center
+
+.d3-tip.n:after
+  margin: -1px 0 0 0
+  top: 100%
+  left: 0
+
+// result.haml
+.num-of-votes
+  font:
+    size: 86px
+    weight: bold
+  color: SteelBlue
+  padding:
+    left: .3em
+  
+p.num
   text:
     align: right
   margin:
-    bottom: 1.0em
-
-span.highlight
-  padding: 4px
-  background:
-    color: rgba(0, 191, 255, 0.5)
-
-// run.haml
-.modal
-  width: 900px
-  margin:
-    left: -470px
-  
-.modal-body
-  max-height: 900px
+    top: 2em
 
 // footer
 footer
