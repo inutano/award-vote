@@ -163,7 +163,7 @@
             
             svg.call(tip);
             
-            data = dataSet.data
+            data = dataSet.data.slice(0,10)
             xScale.domain(data.map(function(d){ return d[0]; }));
             yScale.domain([0, d3.max(data, function(d){ return d[1]; })]);
             
@@ -178,7 +178,7 @@
                  .text("Votes");
             
             svg.selectAll(".bar")
-              .data(data.slice(0,10))
+              .data(data)
               .enter()
               .append("rect")
               .attr("class", "bar")
