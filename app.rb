@@ -63,7 +63,8 @@ class OpenScienceAward < Sinatra::Base
   end
   
   get "/" do
-    haml :index
+    #haml :index
+    "We'll be back soon!"
   end
   
   post "/confirm" do
