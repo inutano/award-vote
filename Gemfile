@@ -8,6 +8,7 @@ gem "pg"
 
 gem "haml"
 gem "sass"
+gem "redcarpet"
 gem "rack-protection"
 
 group :development do

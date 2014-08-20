@@ -16,11 +16,11 @@
         .row
           .span.offset4
             %a{ :href => app_root }
-              %img{ :src => "https://raw.github.com/inutano/jsbi2013/master/src/dsw48.png" }
+              %img{ :src => "https://s3.amazonaws.com/inutano-images/openscienceaward.png", :width => "300", :height => "200" }
         .row
           .span.offset3
             .page-header
-              %h1= "Open Science Award 2013"
+              %h1= "Open Science Award 2014"
               %h2.text-right
                 %small= "presented by DBCLS"
 
@@ -30,15 +30,10 @@
             %h2
               %i.icon-thumbs-up-alt.icon-large
               Open Science Awardについて
-            %p= "オープン・サイエンス・アワードは「論文として発表されていない/されにくい」けど日々ありがたく使っている(国内の)データベース・ソフトウェア・ウェブサイト(ブログやWikiなど)をコミュニティで表彰しよう！という企画です。自薦/他薦を問わずノミネートされた作品に対してみなさんで投票し，得票の多い作品をJSBi年会で表彰，作者に発表を依頼します。学生/研究者，ウェット/ドライ，アカデミック/ビジネス，JSBi会員/非会員を問わずにどなたでも投票できます。利用したことがないノミネート作品もぜひチェックしてみてください。"
-            %p
-              = "投票期限は9/27までとなっています。どなたでも，各部門にノミネートされた作品の中から最大3つの作品に投票することができます。同じ作品に複数の票を投じると無効票になりますのでお気をつけください。プロジェクトページは"
-              %a{ :href => "https://github.com/dbcls/jsbi2013/wiki" }= "こちら"
-            %p
-              = "また，おまけ企画として開発コンペも開催します。クイック・ハックで自由に開発，応募されたものからインパクトのあるものを表彰します。開発と応募の期限は10/24まで。実戦で役に立つものから小ネタ的なものまで，幅広いジャンルからの応募を歓迎します。期間内に開発したものをオープンソースにしてもらうこと，採択された場合10/31当日に会場までお越しいただけることが応募条件です。詳しくは"
-              %a{ :href => "https://github.com/dbcls/jsbi2013/wiki/BioHack" }= "こちら"
             
-      
+        .row
+          ~ markdown(:about_award, :layout => false)
+          
       %hr
       %form{ :name => "voting", :action => "#{app_root}/confirm", :method => "POST" }
         - nomin = nominates
