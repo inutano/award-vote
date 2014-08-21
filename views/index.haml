@@ -1,9 +1,9 @@
 !!! 5
 %html
   %head
-    %title Open Science Award presented by DBCLS
+    %title Open Science Award 2014 presented by DBCLS
     %meta{:charset => "utf-8", :content => "text/html", "http-equiv" => "content"}
-    %link{:rel => :stylesheet, :href => "#{app_root}/css/bootstrap.min.css", :type => "text/css"}
+    %link{:rel => :stylesheet, :href => "//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"}
     %link{:rel => :stylesheet, :href => "#{app_root}/css/font-awesome.min.css", :type => "text/css"}
     %link{:rel => :stylesheet, :href => "#{app_root}/style.css", :type => "text/css"}
     %script{ :src => "http://code.jquery.com/jquery-1.8.2.min.js" }
@@ -11,27 +11,26 @@
 
   %body
     .container
-      %header
+      .page-header
         .row
-          .span.offset4
-            %a{ :href => app_root }
-              %img{ :src => "https://s3.amazonaws.com/inutano-images/openscienceaward.png", :width => "300", :height => "200" }
-        .row
-          .span.offset3
-            .page-header
-              %h1= "Open Science Award 2014"
-              %h2.text-right
-                %small= "presented by DBCLS"
+          .col-md-6.col-md-offset-3
+            .text-center
+              %a{ :href => app_root }
+                %img{ :src => "https://s3.amazonaws.com/inutano-images/openscienceaward.png", :width => "450", :height => "300", :align => "middle" }
+          .col-md-4.col-md-offset-4
+            %h2.text-right
+              %small= "presented by DBCLS"
 
-      %section.description
+      %section.description-header
         .row
-          .span.offset1
+          .col-md-10.col-md-offset-1
             %h2
               %i.icon-thumbs-up-alt.icon-large
               Open Science Awardについて
-            
+        
         .row
-          ~ markdown(:about_award, :layout => false)
+          .col-md-10.col-md-offset-1
+            ~ markdown(:about_award, layout: false, fenced_code_blocks: true)
           
       %hr
       
