@@ -15,9 +15,6 @@ class OpenScienceAward < Sinatra::Base
   register Sinatra::ActiveRecordExtension
   set :database, ENV["DATABASE_URL"]
   
-  set :haml, :format => :html5
-  set :haml, :escape_html => true
-  
   def csv_importer(dsw)
     csv_raw = open(app_root + "/#{dsw}.tsv", "r:utf-8").readlines
     csv_head = csv_raw.shift
