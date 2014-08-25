@@ -63,6 +63,10 @@ class OpenScienceAward < Sinatra::Base
     haml :index
   end
   
+  get "/nominates" do
+    redirect "https://docs.google.com/spreadsheet/ccc?key=0AuGuThBjkm2EdGJMVkxlcXh2UEsxLVFfeHQ0S1YtSHc&usp=sharing"
+  end
+  
   post "/confirm" do
     db = params[:database]
     sw = params[:software]
