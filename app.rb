@@ -9,7 +9,7 @@ require "json"
 require "open-uri"
 require "./ballot"
 
-ENV["DATABASE_URL"] ||= "sqlite3:///database.sqlite"
+ENV["DATABASE_URL"] ||= "sqlite3:database.sqlite"
 
 class OpenScienceAward < Sinatra::Base
   register Sinatra::ActiveRecordExtension
