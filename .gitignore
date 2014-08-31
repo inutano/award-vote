@@ -1,0 +1,4 @@
+.sass-cache
+database.sqlite
+public
+vendor
