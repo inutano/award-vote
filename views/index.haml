@@ -60,9 +60,10 @@
                 - entry = items[0]
                 %h4
                   %a{ :href => entry[:url] }= entry[:name]
-                - if !entry[:winner].empty?
-                  %span.label.label-warning
-                    = entry[:winner]
+                - if entry[:winner]
+                  %p
+                    %span.label.label-warning
+                      = entry[:winner] + "\s" + entry[:year]
                 %p= entry[:note]
                 %p= "developed by: " + entry[:dev_by]
 
@@ -71,9 +72,10 @@
                 .col-md-3
                   %h4
                     %a{ :href => entry[:url] }= entry[:name]
-                  - if !entry[:winner].empty?
-                    %span.label.label-warning
-                      = entry[:winner]
+                  - if entry[:winner]
+                    %p
+                      %span.label.label-warning
+                        = entry[:winner] + "\s" + entry[:year]
                   %p= entry[:note]
                   %p= "developed by: " + entry[:dev_by]
 
@@ -82,9 +84,10 @@
                 .col-md-3
                   %h4
                     %a{ :href => entry[:url] }= entry[:name]
-                  - if !entry[:winner].empty?
-                    %span.label.label-warning
-                      = entry[:winner]
+                  - if entry[:winner]
+                    %p
+                      %span.label.label-warning
+                        = entry[:winner] + "\s" + entry[:year]
                   %p= entry[:note]
                   %p= "developed by: " + entry[:dev_by]
 
@@ -111,9 +114,10 @@
                 - entry = items[0]
                 %h4
                   %a{ :href => entry[:url] }= entry[:name]
-                - if !entry[:winner].empty?
-                  %span.label.label-warning
-                    = entry[:winner]
+                - if entry[:winner]
+                  %p
+                    %span.label.label-warning
+                      = entry[:winner] + "\s" + entry[:year]
                 %p= entry[:note]
                 %p= "developed by: " + entry[:dev_by]
 
@@ -122,9 +126,9 @@
                 .col-md-3
                   %h4
                     %a{ :href => entry[:url] }= entry[:name]
-                  - if !entry[:winner].empty?
+                  - if entry[:winner]
                     %span.label.label-warning
-                      = entry[:winner]
+                      = entry[:winner] + "\s" + entry[:year]
                   %p= entry[:note]
                   %p= "developed by: " + entry[:dev_by]
 
@@ -133,9 +137,10 @@
                 .col-md-3
                   %h4
                     %a{ :href => entry[:url] }= entry[:name]
-                  - if !entry[:winner].empty?
-                    %span.label.label-warning
-                      = entry[:winner]
+                  - if entry[:winner]
+                    %p
+                      %span.label.label-warning
+                        = entry[:winner] + "\s" + entry[:year]
                   %p= entry[:note]
                   %p= "developed by: " + entry[:dev_by]
 
@@ -162,9 +167,10 @@
                 - entry = items[0]
                 %h4
                   %a{ :href => entry[:url] }= entry[:name]
-                - if !entry[:winner].empty?
-                  %span.label.label-warning
-                    = entry[:winner]
+                - if entry[:winner]
+                  %p
+                    %span.label.label-warning
+                      = entry[:winner] + "\s" + entry[:year]
                 %p= entry[:note]
                 %p= "developed by: " + entry[:dev_by]
 
@@ -173,9 +179,10 @@
                 .col-md-3
                   %h4
                     %a{ :href => entry[:url] }= entry[:name]
-                  - if !entry[:winner].empty?
-                    %span.label.label-warning
-                      = entry[:winner]
+                  - if entry[:winner]
+                    %p
+                      %span.label.label-warning
+                        = entry[:winner] + "\s" + entry[:year]
                   %p= entry[:note]
                   %p= "developed by: " + entry[:dev_by]
 
@@ -184,9 +191,10 @@
                 .col-md-3
                   %h4
                     %a{ :href => entry[:url] }= entry[:name]
-                  - if !entry[:winner].empty?
-                    %span.label.label-warning
-                      = entry[:winner]
+                  - if entry[:winner]
+                    %p
+                      %span.label.label-warning
+                        = entry[:winner] + "\s" + entry[:year]
                   %p= entry[:note]
                   %p= "developed by: " + entry[:dev_by]
 
