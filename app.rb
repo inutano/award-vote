@@ -23,7 +23,9 @@ class OpenScienceAward < Sinatra::Base
       { name: line[0],
         dev_by: line[1],
         url: line[2],
-        note: line[3] }
+        note: line[3],
+        year: line[5],
+        winner: line[6] }
     end
   end
   
@@ -98,7 +100,7 @@ class OpenScienceAward < Sinatra::Base
   get "/count" do
     categ = params[:category]
     all = Ballot.all
-
+    
     db_votes = all.map{|r| r.send(categ.intern).split("\t") }.flatten
     votes_count = {}
     db_votes.each do |vote|

@@ -57,24 +57,36 @@
             %hr
             .row
               .col-md-3.col-md-offset-1
+                - entry = items[0]
                 %h4
-                  %a{ :href => items[0][:url] }= items[0][:name]
-                %p= items[0][:note]
-                %p= "developed by: " + items[0][:dev_by]
+                  %a{ :href => entry[:url] }= entry[:name]
+                - if !entry[:winner].empty?
+                  %span.label.label-warning
+                    - entry[:winner]
+                %p= entry[:note]
+                %p= "developed by: " + entry[:dev_by]
 
               - if items[1]
+                - entry = items[1]
                 .col-md-3
                   %h4
-                    %a{ :href => items[1][:url] }= items[1][:name]
-                  %p= items[1][:note]
-                  %p= "developed by: " + items[1][:dev_by]
+                    %a{ :href => entry[:url] }= entry[:name]
+                  - if !entry[:winner].empty?
+                    %span.label.label-warning
+                      - entry[:winner]
+                  %p= entry[:note]
+                  %p= "developed by: " + entry[:dev_by]
 
               - if items[2]
+                - entry = items[2]
                 .col-md-3
                   %h4
-                    %a{ :href => items[2][:url] }= items[2][:name]
-                  %p= items[2][:note]
-                  %p= "developed by: " + items[2][:dev_by]
+                    %a{ :href => entry[:url] }= entry[:name]
+                  - if !entry[:winner].empty?
+                    %span.label.label-warning
+                      - entry[:winner]
+                  %p= entry[:note]
+                  %p= "developed by: " + entry[:dev_by]
 
         %hr
         %section.software
@@ -96,24 +108,36 @@
             %hr
             .row
               .col-md-3.col-md-offset-1
+                - entry = items[0]
                 %h4
-                  %a{ :href => items[0][:url] }= items[0][:name]
-                %p= items[0][:note]
-                %p= "developed by: " + items[0][:dev_by]
+                  %a{ :href => entry[:url] }= entry[:name]
+                - if !entry[:winner].empty?
+                  %span.label.label-warning
+                    - entry[:winner]
+                %p= entry[:note]
+                %p= "developed by: " + entry[:dev_by]
 
               - if items[1]
+                - entry = items[1]
                 .col-md-3
                   %h4
-                    %a{ :href => items[1][:url] }= items[1][:name]
-                  %p= items[1][:note]
-                  %p= "developed by: " + items[1][:dev_by]
+                    %a{ :href => entry[:url] }= entry[:name]
+                  - if !entry[:winner].empty?
+                    %span.label.label-warning
+                      - entry[:winner]
+                  %p= entry[:note]
+                  %p= "developed by: " + entry[:dev_by]
 
               - if items[2]
+                - entry = items[2]
                 .col-md-3
                   %h4
-                    %a{ :href => items[2][:url] }= items[2][:name]
-                  %p= items[2][:note]
-                  %p= "developed by: " + items[2][:dev_by]
+                    %a{ :href => entry[:url] }= entry[:name]
+                  - if !entry[:winner].empty?
+                    %span.label.label-warning
+                      - entry[:winner]
+                  %p= entry[:note]
+                  %p= "developed by: " + entry[:dev_by]
 
         %hr
         %section.web
@@ -135,24 +159,36 @@
             %hr
             .row
               .col-md-3.col-md-offset-1
+                - entry = items[0]
                 %h4
-                  %a{ :href => items[0][:url] }= items[0][:name]
-                %p= items[0][:note]
-                %p= "developed by: " + items[0][:dev_by]
+                  %a{ :href => entry[:url] }= entry[:name]
+                - if !entry[:winner].empty?
+                  %span.label.label-warning
+                    - entry[:winner]
+                %p= entry[:note]
+                %p= "developed by: " + entry[:dev_by]
 
               - if items[1]
+                - entry = items[1]
                 .col-md-3
                   %h4
-                    %a{ :href => items[1][:url] }= items[1][:name]
-                  %p= items[1][:note]
-                  %p= "developed by: " + items[1][:dev_by]
+                    %a{ :href => entry[:url] }= entry[:name]
+                  - if !entry[:winner].empty?
+                    %span.label.label-warning
+                      - entry[:winner]
+                  %p= entry[:note]
+                  %p= "developed by: " + entry[:dev_by]
 
               - if items[2]
+                - entry = items[2]
                 .col-md-3
                   %h4
-                    %a{ :href => items[2][:url] }= items[2][:name]
-                  %p= items[2][:note]
-                  %p= "developed by: " + items[2][:dev_by]
+                    %a{ :href => entry[:url] }= entry[:name]
+                  - if !entry[:winner].empty?
+                    %span.label.label-warning
+                      - entry[:winner]
+                  %p= entry[:note]
+                  %p= "developed by: " + entry[:dev_by]
 
         %section.vote
           .row.text-center
