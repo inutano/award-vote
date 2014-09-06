@@ -104,7 +104,7 @@
           .row
             .col-md-3.col-md-offset-1
               %select.selectpicker{ :id => "software[]", :name => "software[]", :multiple => true , "data-max-options" => "3" }
-                - db.each do |item|
+                - sw.each do |item|
                   %option{ :value => item[:name] }= item[:name]
 
           - sw.each_slice(3) do |items|
@@ -157,7 +157,7 @@
           .row
             .col-md-3.col-md-offset-1
               %select.selectpicker{ :id => "web[]", :name => "web[]", :multiple => true , "data-max-options" => "3" }
-                - db.each do |item|
+                - web.each do |item|
                   %option{ :value => item[:name] }= item[:name]
 
           - web.each_slice(3) do |items|
