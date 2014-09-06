@@ -5,9 +5,11 @@
     %meta{:charset => "utf-8", :content => "text/html", "http-equiv" => "content"}
     %link{:rel => :stylesheet, :href => "//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"}
     %link{:rel => :stylesheet, :href => "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"}
+    %link{:rel => :stylesheet, :href => "//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/css/bootstrap-select.min.css"}
     %link{:rel => :stylesheet, :href => "#{app_root}/style.css", :type => "text/css"}
     %script{ :src => "http://code.jquery.com/jquery-1.8.2.min.js" }
     %script{ :src => "//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" }
+    %script{ :src => "//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/js/bootstrap-select.min.js" }
 
   %body
     .container
@@ -27,18 +29,186 @@
             %h2
               %i.icon-thumbs-up-alt.icon-large
               Open Science Awardについて
-        
+
         .row
           .col-md-10.col-md-offset-1
             ~ markdown(:about_award, layout: false, fenced_code_blocks: true)
-          
+
       %hr
-      
+
+      %form{ :name => "voting", :action => "#{app_root}/confirm", :method => "POST" }
+        - nomin = nominates
+        %section.database
+          .row
+            .col-md-10.col-md-offset-1
+              %h2
+                %i.icon-archive.icon-large
+                Database部門
+              %p= "あなたが「評価したい」データベースを選んでください(最大3つ)"
+
+          - db = nomin[:database]
+          .row
+            .col-md-3.col-md-offset-1
+              %select.selectpicker{ :id => "database[]", :name => "database[]", :multiple => true , "data-max-options" => "3" }
+                - db.each do |item|
+                  %option{ :value => item[:name] }= item[:name]
+
+          - db.each_slice(3) do |items|
+            %hr
+            .row
+              .col-md-3.col-md-offset-1
+                - entry = items[0]
+                %h4
+                  %a{ :href => entry[:url] }= entry[:name]
+                - if entry[:winner]
+                  %p
+                    %span.label.label-warning
+                      = entry[:winner] + "\s" + entry[:year]
+                %p= entry[:note]
+                %p= "developed by: " + entry[:dev_by]
+
+              - if items[1]
+                - entry = items[1]
+                .col-md-3
+                  %h4
+                    %a{ :href => entry[:url] }= entry[:name]
+                  - if entry[:winner]
+                    %p
+                      %span.label.label-warning
+                        = entry[:winner] + "\s" + entry[:year]
+                  %p= entry[:note]
+                  %p= "developed by: " + entry[:dev_by]
+
+              - if items[2]
+                - entry = items[2]
+                .col-md-3
+                  %h4
+                    %a{ :href => entry[:url] }= entry[:name]
+                  - if entry[:winner]
+                    %p
+                      %span.label.label-warning
+                        = entry[:winner] + "\s" + entry[:year]
+                  %p= entry[:note]
+                  %p= "developed by: " + entry[:dev_by]
+
+        %hr
+        %section.software
+          .row
+            .col-md-10.col-md-offset-1
+              %h2
+                %i.icon-wrench.icon-large
+                Software部門
+              %p= "あなたが「評価したい」ソフトウェアを選んでください(最大3つ)"
+
+          - sw = nomin[:software]
+          .row
+            .col-md-3.col-md-offset-1
+              %select.selectpicker{ :id => "software[]", :name => "software[]", :multiple => true , "data-max-options" => "3" }
+                - db.each do |item|
+                  %option{ :value => item[:name] }= item[:name]
+
+          - sw.each_slice(3) do |items|
+            %hr
+            .row
+              .col-md-3.col-md-offset-1
+                - entry = items[0]
+                %h4
+                  %a{ :href => entry[:url] }= entry[:name]
+                - if entry[:winner]
+                  %p
+                    %span.label.label-warning
+                      = entry[:winner] + "\s" + entry[:year]
+                %p= entry[:note]
+                %p= "developed by: " + entry[:dev_by]
+
+              - if items[1]
+                - entry = items[1]
+                .col-md-3
+                  %h4
+                    %a{ :href => entry[:url] }= entry[:name]
+                  - if entry[:winner]
+                    %span.label.label-warning
+                      = entry[:winner] + "\s" + entry[:year]
+                  %p= entry[:note]
+                  %p= "developed by: " + entry[:dev_by]
+
+              - if items[2]
+                - entry = items[2]
+                .col-md-3
+                  %h4
+                    %a{ :href => entry[:url] }= entry[:name]
+                  - if entry[:winner]
+                    %p
+                      %span.label.label-warning
+                        = entry[:winner] + "\s" + entry[:year]
+                  %p= entry[:note]
+                  %p= "developed by: " + entry[:dev_by]
+
+        %hr
+        %section.web
+          .row
+            .col-md-10.col-md-offset-1
+              %h2
+                %i.icon-globe.icon-large
+                Web部門
+              %p= "あなたが「評価したい」ウェブサイトを選んでください(最大3つ)"
+
+          - web = nomin[:web]
+          .row
+            .col-md-3.col-md-offset-1
+              %select.selectpicker{ :id => "web[]", :name => "web[]", :multiple => true , "data-max-options" => "3" }
+                - db.each do |item|
+                  %option{ :value => item[:name] }= item[:name]
+
+          - web.each_slice(3) do |items|
+            %hr
+            .row
+              .col-md-3.col-md-offset-1
+                - entry = items[0]
+                %h4
+                  %a{ :href => entry[:url] }= entry[:name]
+                - if entry[:winner]
+                  %p
+                    %span.label.label-warning
+                      = entry[:winner] + "\s" + entry[:year]
+                %p= entry[:note]
+                %p= "developed by: " + entry[:dev_by]
+
+              - if items[1]
+                - entry = items[1]
+                .col-md-3
+                  %h4
+                    %a{ :href => entry[:url] }= entry[:name]
+                  - if entry[:winner]
+                    %p
+                      %span.label.label-warning
+                        = entry[:winner] + "\s" + entry[:year]
+                  %p= entry[:note]
+                  %p= "developed by: " + entry[:dev_by]
+
+              - if items[2]
+                - entry = items[2]
+                .col-md-3
+                  %h4
+                    %a{ :href => entry[:url] }= entry[:name]
+                  - if entry[:winner]
+                    %p
+                      %span.label.label-warning
+                        = entry[:winner] + "\s" + entry[:year]
+                  %p= entry[:note]
+                  %p= "developed by: " + entry[:dev_by]
+
+        %section.vote
+          .row.text-center
+            %button.btn.btn-lg.btn-success{ :type => "submit", :position => "absolute" }= "Vote"
+
+        :javascript
+          $('.selectpicker').selectpicker();
       %footer
         powered by
         %a{ :href => "http://dbcls.rois.ac.jp/" }
           DBCLS
         , project licensed under CC-BY 2.1 JP. /
-        Font Awesome by Dave Gandy - 
+        Font Awesome by Dave Gandy -
         %a{ :href => "http://fortawesome.github.com/Font-Awesome" }
           http://fortawesome.github.com/Font-Awesome

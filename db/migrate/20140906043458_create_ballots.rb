@@ -9,7 +9,7 @@ class CreateBallots < ActiveRecord::Migration
       t.timestamps
     end
   end
-
+  
   def down
   end
 end

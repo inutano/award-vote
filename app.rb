@@ -9,7 +9,7 @@ require "json"
 require "open-uri"
 require "./ballot"
 
-ENV["DATABASE_URL"] ||= "sqlite3:///database.sqlite"
+ENV["DATABASE_URL"] ||= "sqlite3:database.sqlite"
 
 class OpenScienceAward < Sinatra::Base
   register Sinatra::ActiveRecordExtension
@@ -19,11 +19,13 @@ class OpenScienceAward < Sinatra::Base
     csv_raw = open(app_root + "/#{dsw}.tsv", "r:utf-8").readlines
     csv_head = csv_raw.shift
     csv_raw.map do |line_n|
-      line = line_n.split("\t")
+      line = line_n.chomp.split("\t")
       { name: line[0],
         dev_by: line[1],
         url: line[2],
-        note: line[3] }
+        note: line[3],
+        year: line[5],
+        winner: line[6] }
     end
   end
   
@@ -98,7 +100,7 @@ class OpenScienceAward < Sinatra::Base
   get "/count" do
     categ = params[:category]
     all = Ballot.all
-
+    
     db_votes = all.map{|r| r.send(categ.intern).split("\t") }.flatten
     votes_count = {}
     db_votes.each do |vote|
