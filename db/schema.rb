@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130918083307) do
+ActiveRecord::Schema.define(version: 20140906043458) do
 
   create_table "ballots", force: true do |t|
     t.string   "db"
