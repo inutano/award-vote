@@ -1,0 +1,28 @@
+Database	Developed by	URL	Description	Recommended by	Nominated	Winner
+Biomasspedia	込山悠介さん＠東大	http://biomasspedia.net/	セマンティック・ウェブ技術を利用し、バイオマスを対象とした論文、データ、政府統計情報や地理的情報をLODとして公開	横山 <yokoyama@cb.k.u-tokyo.ac.jp>	2013	
+BrainStars	粕川雄也さん@理研	http://brainstars.org/	成体マウスの様々な脳領域における遺伝子発現を包括的に解析したデータを公開している	片山 <ktym@dbcls.jp>	2013	
+coxpresdb/atted	大林武さん＠東北大	http://coxpresdb.jp	DNAマイクロアレイの結果から計算された、様々な実験条件での遺伝子の共発現をデータベース化。ヒトから酵母までの11生物種に対応	荒川 <gaou@sfc.keio.ac.jp>	2013	Special Recognition
+CyanoBase	藤澤貴智さん＠遺伝研ほか	http://genome.microbedb.jp/cyanobase/	かずさDNA研究所で解読したシアノバクテリアを含む、37種類の藍藻、緑色硫黄細菌、紅色非硫黄細菌の全ゲノム配列解析結果と文献から収集したアノテーションを収録	片山 <ktym@dbcls.jp>	2013	
+dbTSS	山下理宇さん＠東北大	http://dbtss.hgc.jp	ヒトの転写開始点(TSS)のデータベース。TSS-Seq法で実験的に検証したデータを公開。ENCODEデータも組み込んでいる	露崎 <k.t.the.answer@hotmail.co.jp>	2013	
+H-DBAS	武田淳一さん＠産総研	http://www.h-invitational.jp/h-dbas/	H-InvDBの配列データに基づく選択的スプライシング(alternative splicing; AS)のデータベース	石黒 <t10078si@sfc.keio.ac.jp>	2013	
+kaikobase	農業生物資源研究所	http://sgp.dna.affrc.go.jp/KAIKObase/	農業生物資源研究所による、カイコゲノム情報のデータベース。最近完全長cDNA情報が追加された	緒方<norichika.o@gmail.com>	2013	
+KOMICS	櫻井望さん＠かずさDNA研	http://www.kazusa.or.jp/komics/ja/	メタボロミクスに関してかずさDNA研究所で開発された質量分析のデータベースや解析ソフトウェアを取りまとめたポータルサイト	片山 <ktym@dbcls.jp>	2013	
+MBGD	内山郁夫さん＠基生研	http://mbgd.genome.ad.jp	微生物の比較ゲノム解析結果を収録したデータベース。約600の生物種、約200万の遺伝子に加え、数十億件におよぶそれら遺伝子間のホモロジーデータが登録されている	尾崎 <harukao@cb.k.u-tokyo.ac.jp>	2013	
+PosMed	豊田哲郎さん＠理研	http://biosparql.org/PosMed/	任意のキーワードから、対応する遺伝子、染色体領域、生体内相互作用を推論し検索結果をランキング、文献情報とともに出力する	片山 <ktym@dbcls.jp>	2013	
+R graphical manual	小笠原理さん@遺伝研	http://rgm3.lab.nig.ac.jp/RGM/	R言語のパッケージ全体を対象に、それぞれの関数が持つ機能を可視化するため、各パッケージに同梱されるマニュアルのExampleを全て実行し、その結果をDB化	大田 <t.ohta@dbcls.rois.ac.jp>	2013	2nd prize
+TargetMine	水口賢司さん@医薬基盤研	http://targetmine.nibio.go.jp/	創薬ターゲットの絞り込みを支援する統合データウェアハウス。世界の主要な16のライフサイエンス関連データベースを統合的に検索できる	野原 <nohara.sachio@mss.co.jp>	2013	
+TogoGenome	岡本忍さん＠DBCLSほか	http://togogenome.org/	ゲノム情報をセマンティック・ウェブを用いて統合したデータベース。微生物を中心に2600生物種のゲノム、UniProtのアノテーション、環境や培地などの各種オントロジーを開発・集積	片山 <ktym@dbcls.jp>	2013	3rd prize
+ライフサイエンス辞書プロジェクト	金子周司さん＠京大	http://lsd.pharm.kyoto-u.ac.jp/ja/index.html	ライフサイエンス分野の専門用語・対訳・用法・各種統計情報を分析・収集。例文をもとにした共起検索などもできて、論文を書く時に便利	尾崎 <harukao@cb.k.u-tokyo.ac.jp>, 横山 <yokoyama@cb.k.u-tokyo.ac.jp>	2013	1st prize
+三橋ノート画像データベース	農業環境技術研究所	http://mitsuhashi.niaes.affrc.go.jp/	故 三橋伸治氏によって作成された日本産昆虫に関する文献目録。全476冊、推定99,419項の手描きのノートを画像データベースとして公開している	緒方<norichika.o@gmail.com>	2013	
+日本産アリ類画像データベース	吉村正志さん＠宮城教育大ほか	http://ant.edb.miyakyo-u.ac.jp/J/index.html	1995年公開。日本産アリ類の画像データベースであり、専門知識がなくても使用できる検索方法を用意し、分類専門家以外の一般の人も閲覧しやすい	伊藤 <maori@nibio.go.jp>	2013	
+野草・雑草検索図鑑	千葉県立中央博物館・茨城大学教育学部	http://chiba-muse.jp/yasou2010/index.html	千葉県立中央博物館の学芸員の方が中心となって作っている野草・雑草のデータベース。形態や名前、分類から検索が可能	twitter: @hinaichigo	2013	
+IDEAL	太田研@名古屋大	http://www.ideal.force.cs.is.nagoya-u.ac.jp/IDEAL/	天然変性タンパク質(IDP)のデータベース。BLASTやXMLでのダウンロードなども提供している	NAR DB issue 2014	2014	
+ppdb	山本研@岐阜大	http://ppdb.agr.gifu-u.ac.jp/	シロイヌナズナ、イネ、ヒメツリガネゴケ、ポプラなど植物のプロモーター領域のアノテーションを提供するデータベース。	NAR DB issue 2014	2014	
+EMBRYS	浅原研@国立成育医療研究センター	http://embrys.jp/embrys/html/MainMenu.html	マウスの妊娠中期の全胚における遺伝子発現パターンのアノテーションを主としたデータベース。360度様々な角度から見ることができる顕微鏡写真も収録。	OReFiL	2014	
+KNApSAcK Family	金谷研@NAIST他	http://kanaya.naist.jp/KNApSAcK_Family/	メタボロミクスを中心としたオミックス科学のためのデータベース。生物種-代謝物関係データベースKNApSAck Core、二次代謝物三次元データベース3D、検索エンジンなどを提供。	OReFiL	2014	
+UniVIO	榊原研@理研植物化学研究センター	http://univio.psc.riken.jp/	イネの植物ホルモンと遺伝子発現のデータベース。	OReFiL	2014	
+FANTOM5 web resource	RIKEN CLST/DGT; RIKEN PMI	http://fantom.gsc.riken.jp/5/	ヒトとマウスの様々な細胞・組織からFANTOM5プロジェクトで取得・解析したゲノムワイドな転写開始点活性情報と、その解析結果	Kawaji H <kawaji@gsc.riken.jp>	2014	
+KBY no PAGE 	壁谷幸子さんと長谷部光泰さん@基礎生物学研究所	http://www.nibb.ac.jp/evodevo/0.Top.html	被子植物およびシダ類の進化について、最新の知見を分かりやすく解説する。	Takeshi Kawashima <takeshik@oist.jp>	2014	
+Colil	山本泰智さん@DBCLS	http://colil.dbcls.jp/	PMCオープンアクセスサブセットの全文を対象として、文献の引用情報と、本文中で引用している部分の文脈を格納。ある文献が、他の文献でどのように引用されているのかを簡単に閲覧できる。	yayamamo	2014	
+RDFized LSD	山本泰智さん@DBCLS	http://lsd.dbcls.jp/	ライフサイエンス辞書をRDF化したもの	yayamamo	2014	
+新着論文レビューをMeSHで検索	山本泰智さん@DBCLS	http://navi.first.lifesciencedb.jp/	新着論文レビューの記事を、MeSHの階層構造とLSDを用いて日本語によるディレクトリ型検索を可能とする	yayamamo	2014	

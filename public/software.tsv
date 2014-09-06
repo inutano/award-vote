@@ -1,0 +1,41 @@
+Software	Developed by	URL	Description	Recommended by	Nominated	Winner
+Allie	山本泰智さん@DBCLS	http://allie.dbcls.jp/	生命科学分野において利用されている略語とその展開形を検索するサービス。MEDLINE®に含まれる全ての題目と要旨を対象として略語とその展開形を検索できる	伊藤 <maori@nibio.go.jp>	2013	
+BaseSpace Ruby SDK	片山俊明さん＠DBCLSほか	https://developer.basespace.illumina.com/docs/content/documentation/sdk-samples/ruby-sdk-overview	イルミナのクラウド環境BaseSpaceにアクセスし、MiSeqやHiSeqから出力されたデータを解析するアプリケーションをRuby言語で開発するためのライブラリ。オープンソースで公開、2013/8にイルミナ社からも正式採用	片山 <ktym@dbcls.jp>	2013	
+Bioconductor Code Search for Package Developers	二階堂愛さん@理研	http://search.bioconductor.jp/	BioConductorパッケージのソースコードを全文検索するWebアプリケーション	大田 <t.ohta@dbcls.rois.ac.jp>	2013	
+BioRuby	後藤直久さん＠阪大ほか	http://bioruby.org/	バイオインフォマティクスの各種データベース・解析ツール・ウェブサービスを利用するためのRuby言語用ライブラリ。Open Bio*の中では唯一の国産から始まった国際プロジェクト	片山 <ktym@dbcls.jp>	2013	2nd prize
+CellDesigner	舟橋啓さん＠慶應大	http://www.celldesigner.org/	化学反応、転写、翻訳、複合体生成などのネットワークを計算機内に再構築したモデルを書き下ろすためのソフトウェア。モデルを数値計算して、時間的変化をグラフ化することも	片山 <ktym@dbcls.jp>	2013	
+Chrovis	西村邦裕さん＠テンクー	http://chrov.is/	クラウド環境を用いたゲノムブラウザとNGS解析のためのプラットフォーム。まだ開発中のため詳細不明だがNGS現場の会ですっきりしたデザインのデモ版が展示された	片山 <ktym@dbcls.jp>	2013	
+DBCLS SRA Metadata Search code: Soylatte	大田達郎さん@DBCLS	http://sra.dbcls.jp/search	公共NGSデータベースSRAに登録されたデータを生物種・解析タイプ・シーケンサーの種類などでファセット検索するためのウェブインターフェース。データに関連する論文の全文検索エンジンを搭載	緒方<norichika.o@gmail.com>	2013	
+G-language System	荒川和晴さん＠慶應大	http://g-language.org/wiki/	さまざまなゲノム解析を高速かつ効率的に行うためのツールキット。すべてをPerl言語モジュールとして提供	石黒 <t10078si@sfc.keio.ac.jp>， 尾崎 <harukao@cb.k.u-tokyo.ac.jp>	2013	
+GENIES	小寺正明さん＠京大	http://www.genome.jp/tools/genies/	教師付きネットワーク推定により遺伝子ネットワークを予測。出力として予測された遺伝子ペアのリストや、KEGG PATHWAY上へのマッピングなどが可能	川島 <kwsm@dbcls.rois.ac.jp>	2013	
+genoDive	岡本忍さん@DBCLS	http://genodive.org/	ゲノムを３次元表示する超絶美麗超高速3Dゲノムブラウザ。DASからデータを取得しGoogle Earthで見る地球のようにゲノムを俯瞰。2008年に開発されるも時代を先取りしすぎていた感あり。TogoGenomeと連携予定	片山 <ktym@dbcls.jp>	2013	
+Genome Matcher	大坪嘉行さん@東北大	http://www.ige.tohoku.ac.jp/joho/gmProject/gmhomeJP.html	比較ゲノムツール。2つのゲノムをbl2seq, blastall, MUMmerなどで比較解析し、SNPや組み替えシンテニー領域等を様々なレイアウトで可視化。アノテーションの参照や解析用の付属機能が豊富	露崎 <k.t.the.answer@hotmail.co.jp>	2013	
+GenomeJack	三菱スペースソフトウェア	http://genomejack.net/	三菱スペースソフトウェアによる大規模データでもサクサク動くゲノムブラウザ。フリー版と解析機能のついた商用版がある	片山 <ktym@dbcls.jp>	2013	
+GGGenome	内藤雄樹さん@DBCLS	http://gggenome.dbcls.jp/ja/	ゲノム等の塩基配列を超高速に検索するウェブサービス。BLASTで検出できないような短い配列に対応し、数塩基のミスマッチ・挿入・欠失を許容した配列検索が可能	野原 <nohara.sachio@mss.co.jp>	2013	1st prize
+inMeXes	山本泰智さん@DBCLS	http://docman.dbcls.jp/im/	PubMed/MEDLINE®に含まれる書誌情報のタイトルやアブストラクトから英語表現をインクリメンタルに検索できる。ある動詞の後に続く適切な前置詞の検索や、ある単語の前後にどういう語がくることが多いかなどの検索ができ、英文書きに重宝する	緒方<norichika.o@gmail.com>	2013	
+iPathways	SBI	http://www.ipathways.org/	CellDesignerで作ったパスウェイにiPadやiPhoneなどからアクセス、ブラウジングできるiOSネイティブアプリケーション		2013	
+Local Package Manager	笠原雅弘さん@東大	http://www.kasahara.ws/lpm/	外部スパコンなどのroot権限を持てない環境でも、コンパイラgccからNGS解析アプリまで各種ソフトウェアのインストールを簡単に行うためのパッケージ	大田 <t.ohta@dbcls.rois.ac.jp>， 尾崎 <harukao@cb.k.u-tokyo.ac.jp>	2013	Special Recognition
+MAFFT	加藤和貴さん＠CBRC/九大	http://mafft.cbrc.jp/alignment/software/	最高精度のマルチプルアラインメントを行うソフトウェア。ニーズに合わせて正確さや速度の異なる複数のメソッドが実装されており、国際的にも高い評価を得ている	荒川 <goau@sfc.keio.ac.jp>	2013	3rd prize
+MEGA	田村浩一郎さん@首都大学東京	http://www.megasoftware.net	DNA・タンパク質配列の系統解析ソフトウェア。シークエンサーのファイル（ab1, abi, scfなど）も直接読み込めるため、波形データと配列データを一緒に解析できる。サイト毎のトリミングなど、配列データの詳細な編集も可能	露崎 <k.t.the.answer@hotmail.co.jp>	2013	
+Murasaki	Kris Popendorfさん@慶應大ほか	http://murasaki.dna.bio.keio.ac.jp/wiki/	全ゲノム規模でのマルチプルアライメントを高速・省メモリで実現するgapped seedを用いた比較ゲノム解析ツール。関連する可視化GUIを利用することによりさまざまな解析が可能	露崎 <k.t.the.answer@hotmail.co.jp>	2013	
+PathPred	守屋勇樹さん＠京大	http://www.genome.jp/tools/pathpred/	メタボロームデータから予測される反応分類や既知の化合物ペアの情報を利用し、化合物を入力するとそれがどのように代謝されるか自動的に多段階予測を行う	川島 <kwsm@dbcls.rois.ac.jp>	2013	
+Platanus genome assembler	梶谷嶺さん＠東工大	http://platanus.bio.titech.ac.jp/?lang=ja	真核生物サイズにも対応できるゲノムアセンブラ。K-merの値をシフトした何種類かのアセンブルを組み合わせた上でscaffoldingするのが特徴	twitter: @hinaichigo	2013	
+QUMA	熊木勇一さん＠京大	http://quma.cdb.riken.jp/top/index_j.html	バイサルファイト配列の解析ツール。アラインメント、CpGメチル化状態の判定、図の作成が短時間で行える	横山 <yokoyama@cb.k.u-tokyo.ac.jp>	2013	
+Ruby UCSC API	三嶋博之さん＠長崎大	https://rubygems.org/gems/bio-ucsc-api	UCSCゲノムブラウザへのアクセスを容易にするAPIをBioRubyのプラグインとして実装。ローカルにデータをコピーしたMySQLサーバでも使える。これを内蔵したTogoWSでREST APIからも利用可能に	片山 <ktym@dbcls.jp>	2013	
+Samscope	Kris Popendorfさん＠慶應大ほか	http://sourceforge.net/projects/samscope/	リファレンスが数万件あるようなドラフト/メタなマッピングの結果も一枚のキャンバスに表示できる、SAM/BAMファイルビューワー	twitter: @hinaichigo	2013	
+SPRAI	今井飛将さん＠東大	http://zombie.cb.k.u-tokyo.ac.jp/sprai/	PacBio RSシステムによるシーケンスリードのエラー修正を行うツール。NGS現場の会での新規ゲノムアセンブル企画で実績あり	川島 <kwsm@dbcls.rois.ac.jp>	2013	
+TCC	門田幸二さん＠東大	http://www.iu.a.u-tokyo.ac.jp/~kadota/TCC/	RNA-Seqカウントデータの正規化手法の一つであるTbT法を行うためのR言語パッケージ。edgeR/DESeq/baySeq/EBSeqと組み合わせて使用できる。	緒方<norichika.o@gmail.com>	2013	
+TogoDB	片山俊明さん＠DBCLS	http://togodb.org/	表形式のデータからライフサイエンスのデータベースを容易に構築できるサービス。柔軟なカスタマイズが可能で、充実した検索機能やブラウズ機能を提供。他サイトへの埋め込みやセマンティック・ウェブにも対応		2013	
+TogoWS	片山俊明さん＠DBCLSほか	http://togows.org/	NCBI, UCSC, EBI, KEGG, DDBJ, PDBなど国内外の主要なデータベースエントリの検索と取得に対応。エントリのパースやフォーマット変換にも対応し、JSONやTurtle形式でのデータ取得もREST APIのURL指定だけで可能		2013	
+UTGB Toolkit	斉藤太郎さん＠東大	http://utgenome.org/	ウェブブラウザで動くゲノムブラウザを開発するためのツールキット。メダカゲノムなど、独自のゲノムプロジェクトでカスタマイズしたい場合に活用されている	片山 <ktym@dbcls.jp>， 横山 <yokoyama@cb.k.u-tokyo.ac.jp>	2013	
+difff «ﾃﾞｭﾌﾌ»	内藤雄樹さん@DBCLS	http://difff.jp	2つのテキストの差分を可視化してくれるウェブツール。某コピペ論文案件で大ブレイクしたが、誰にでも使いやすいシンプルなインターフェースが好評で愛用者も多い。	大田<t.ohta@dbcls.rois.ac.jp>	2014	
+ピタゴラギャラクシー	芦崎晃一さん@理研	http://www.pitagora-galaxy.org	複数のNGS解析ワークフローがセットアップされた状態のGalaxyをすぐに使える仮想環境(VM)が共有されている。ドキュメンテーションやテストサイトも。	大田<t.ohta@dbcls.rois.ac.jp>	2014	
+aLeaves	工樂樹洋さん@理研	http://aleaves.cdb.riken.jp/	遺伝子配列リソース横断的にホモロジーのある配列セットを用意するツール。	NAR WS issue 2013	2014	
+DINIES	山西芳裕さん@九大	http://www.genome.jp/tools/dinies/	医薬品とターゲットの関係を化合物構造、ゲノム情報、薬 効データから予測するツール。	NAR WS issue 2014	2014	
+TogoTable	河野信さん@DBCLS	http://togotable.dbcls.jp/	遺伝子名や遺伝子IDのリストや表を入力として与えると、複数のデータベースのIDやアノテーションを関連付けることができる。RDF化されたDBを利用することで効率よいアノテーション情報の収集が可能。	NAR WS issue 2014	2014	
+Toxygates	水口研@医薬基盤研	http://toxygates.nibio.go.jp/toxygates/	トキシコゲノミクス(Open TG-Gates)のデータの検索やデータを利用した解析を行うためのツール。	OReFiL	2014	
+TASUKE multiple genome browser	熊谷雅彦さん@生物研	http://tasuke.dna.affrc.go.jp/index.php/Main_Page	リシークエンスデータを可視化するためのツール。変異やdepth、アノテーションの表示にも対応している。	OReFiL	2014	
+MICAN	千見寺浄慈さん@名古屋大	http://landscape.tbp.cse.nagoya-u.ac.jp/MICAN/	タンパク質構造解析のための構造アラインメントツール。配列順序に捕われずにアラインメントを行うアルゴリズムを採用。	OReFiL	2014	
+ECOH	遠里由佳子さん@立命館大	http://www.bioinfo.sk.ritsumei.ac.jp/apps/ecoh/	MCS アルゴリズムと相互情報量を用いEC番号の推定を行うツール。	OReFiL	2014	
+Klab tools	笠原雅弘さん@東大	https://github.com/mkasa/klab	笠原研で開発されているツールセット。FASTA/FASTQを操作するfattなど便利なツールが多数公開されている。	大田<t.ohta@dbcls.rois.ac.jp>	2014	
+MutMap	高木宏樹さん@岩手生工研	http://genome-e.ibrc.or.jp/home/bioinformatics-team/mutmap	NGSを用いて突然変異体の原因遺伝子を同定するための解析パイプライン。リファレンスとは異なる生物品種においてde novo assemblyを用いた遺伝子同定を行うMutMap-Gapなども。	大田<t.ohta@dbcls.rois.ac.jp>	2014	
