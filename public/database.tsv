@@ -22,7 +22,7 @@ EMBRYS	浅原研@国立成育医療研究センター	http://embrys.jp/embrys/ht
 KNApSAcK Family	金谷研@NAIST他	http://kanaya.naist.jp/KNApSAcK_Family/	メタボロミクスを中心としたオミックス科学のためのデータベース。生物種-代謝物関係データベースKNApSAck Core、二次代謝物三次元データベース3D、検索エンジンなどを提供。	OReFiL	2014	
 UniVIO	榊原研@理研植物化学研究センター	http://univio.psc.riken.jp/	イネの植物ホルモンと遺伝子発現のデータベース。	OReFiL	2014	
 FANTOM5 web resource	RIKEN CLST/DGT; RIKEN PMI	http://fantom.gsc.riken.jp/5/	ヒトとマウスの様々な細胞・組織からFANTOM5プロジェクトで取得・解析したゲノムワイドな転写開始点活性情報と、その解析結果	Kawaji H <kawaji@gsc.riken.jp>	2014	
-KBY no PAGE 	壁谷幸子さんと長谷部光泰さん@基礎生物学研究所	http://www.nibb.ac.jp/evodevo/0.Top.html	被子植物およびシダ類の進化について、最新の知見を分かりやすく解説する。	Takeshi Kawashima <takeshik@oist.jp>	2014	
 Colil	山本泰智さん@DBCLS	http://colil.dbcls.jp/	PMCオープンアクセスサブセットの全文を対象として、文献の引用情報と、本文中で引用している部分の文脈を格納。ある文献が、他の文献でどのように引用されているのかを簡単に閲覧できる。	yayamamo	2014	
 RDFized LSD	山本泰智さん@DBCLS	http://lsd.dbcls.jp/	ライフサイエンス辞書をRDF化したもの	yayamamo	2014	
 新着論文レビューをMeSHで検索	山本泰智さん@DBCLS	http://navi.first.lifesciencedb.jp/	新着論文レビューの記事を、MeSHの階層構造とLSDを用いて日本語によるディレクトリ型検索を可能とする	yayamamo	2014	
+MarineGenomicsDB	marinegenomicsdb@OIST	http://marinegenomics.oist.jp/	主に海産無脊椎動物のオリジナルゲノムデータのデータベース。オリジナルのゲノム解読データ以外に独自のアノテーションデータの作成も行っている。	Takeshi Kawashima <takeshik@oist.jp>	2014	
