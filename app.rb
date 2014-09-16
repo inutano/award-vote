@@ -70,9 +70,9 @@ class OpenScienceAward < Sinatra::Base
   end
   
   post "/confirm" do
-    db = params[:database]
-    sw = params[:software]
-    web = params[:web]
+    db = params[:database] || []
+    sw = params[:software] || []
+    web = params[:web] || []
     @cert = valid_vote?(db + sw + web)
     
     @vote = { database: db,
