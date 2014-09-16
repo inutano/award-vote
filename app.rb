@@ -82,9 +82,9 @@ class OpenScienceAward < Sinatra::Base
   end
   
   post "/voted" do
-    @vote = { database: params[:database],
-              software: params[:software],
-              web: params[:web] }
+    @vote = { database: params[:database] || [],
+              software: params[:software] || [],
+              web: params[:web] || [] }
     
     ballot = Ballot.new
     ballot.db = @vote[:database].join("\t")
