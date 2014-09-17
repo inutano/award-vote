@@ -1,12 +1,12 @@
-coxpresdb/atted	http://coxpresdb.jp	2013	Special Recognition
-R graphical manual	http://rgm3.lab.nig.ac.jp/RGM/	2013	2nd prize
-TogoGenome	http://togogenome.org/	2013	3rd prize
-ライフサイエンス辞書プロジェクト	http://lsd.pharm.kyoto-u.ac.jp/ja/index.html	2013	1st prize
-BioRuby	http://bioruby.org/	2013	2nd prize
-GGGenome	http://gggenome.dbcls.jp/ja/	2013	1st prize
-Local Package Manager	http://www.kasahara.ws/lpm/	2013	Special Recognition
-MAFFT	http://mafft.cbrc.jp/alignment/software/	2013	3rd prize
-NGS Surfer's Wiki	http://cell-innovation.nig.ac.jp/wiki/tiki-index.php	2013	Special Recognition
-Rで塩基配列解析/Rでマイクロアレイデータ解析	http://www.iu.a.u-tokyo.ac.jp/~kadota/r_seq.html	2013	2nd prize
-TogoTV	http://togotv.dbcls.jp/ja/	2013	1st prize
-ライフサイエンス 新着論文レビュー	http://first.lifesciencedb.jp/	2013	3rd prize
+coxpresdb/atted	大林武さん＠東北大	http://coxpresdb.jp	DNAマイクロアレイの結果から計算された、様々な実験条件での遺伝子の共発現をデータベース化。ヒトから酵母までの11生物種に対応	荒川 <gaou@sfc.keio.ac.jp>	2013	Special Recognition
+R graphical manual	小笠原理さん@遺伝研	http://rgm3.lab.nig.ac.jp/RGM/	R言語のパッケージ全体を対象に、それぞれの関数が持つ機能を可視化するため、各パッケージに同梱されるマニュアルのExampleを全て実行し、その結果をDB化	大田 <t.ohta@dbcls.rois.ac.jp>	2013	2nd prize
+TogoGenome	岡本忍さん＠DBCLSほか	http://togogenome.org/	ゲノム情報をセマンティック・ウェブを用いて統合したデータベース。微生物を中心に2600生物種のゲノム、UniProtのアノテーション、環境や培地などの各種オントロジーを開発・集積	片山 <ktym@dbcls.jp>	2013	3rd prize
+ライフサイエンス辞書プロジェクト	金子周司さん＠京大	http://lsd.pharm.kyoto-u.ac.jp/ja/index.html	ライフサイエンス分野の専門用語・対訳・用法・各種統計情報を分析・収集。例文をもとにした共起検索などもできて、論文を書く時に便利	尾崎 <harukao@cb.k.u-tokyo.ac.jp>, 横山 <yokoyama@cb.k.u-tokyo.ac.jp>	2013	1st prize
+BioRuby	後藤直久さん＠阪大ほか	http://bioruby.org/	バイオインフォマティクスの各種データベース・解析ツール・ウェブサービスを利用するためのRuby言語用ライブラリ。Open Bio*の中では唯一の国産から始まった国際プロジェクト	片山 <ktym@dbcls.jp>	2013	2nd prize
+GGGenome	内藤雄樹さん@DBCLS	http://gggenome.dbcls.jp/ja/	ゲノム等の塩基配列を超高速に検索するウェブサービス。BLASTで検出できないような短い配列に対応し、数塩基のミスマッチ・挿入・欠失を許容した配列検索が可能	野原 <nohara.sachio@mss.co.jp>	2013	1st prize
+Local Package Manager	笠原雅弘さん@東大	http://www.kasahara.ws/lpm/	外部スパコンなどのroot権限を持てない環境でも、コンパイラgccからNGS解析アプリまで各種ソフトウェアのインストールを簡単に行うためのパッケージ	大田 <t.ohta@dbcls.rois.ac.jp>， 尾崎 <harukao@cb.k.u-tokyo.ac.jp>	2013	Special Recognition
+MAFFT	加藤和貴さん＠CBRC/九大	http://mafft.cbrc.jp/alignment/software/	最高精度のマルチプルアラインメントを行うソフトウェア。ニーズに合わせて正確さや速度の異なる複数のメソッドが実装されており、国際的にも高い評価を得ている	荒川 <goau@sfc.keio.ac.jp>	2013	3rd prize
+NGS Surfer's Wiki	藤井信之さん@遺伝研	http://cell-innovation.nig.ac.jp/wiki/tiki-index.php	NGS解析ツールのインストール方法や使用方法に関するwiki。トラブルシューティングに関する情報が充実	尾崎 <harukao@cb.k.u-tokyo.ac.jp>	2013	Special Recognition
+Rで塩基配列解析/Rでマイクロアレイデータ解析	門田幸二さん@東大	http://www.iu.a.u-tokyo.ac.jp/~kadota/r_seq.html	R言語でのトランスクリプトーム解析の方法がまとめられている。サンプルコードが豊富	露崎 <k.t.the.answer@hotmail.co.jp>	2013	2nd prize
+TogoTV	DBCLS 統合牧場 番組制作部	http://togotv.dbcls.jp/ja/	ライフサイエンス関連のソフトウェアの使い方を動画で解説。ウェブサイトやツールがアップデートされると動画もアップデートされる。学会やシンポジウムでの講演動画も公開	matsumae@med.kitasato-u.ac.jp	2013	1st prize
+ライフサイエンス 新着論文レビュー	飯田啓介さん@DBCLS	http://first.lifesciencedb.jp/	トップジャーナルに掲載された日本人を著者とする生命科学分野の論文の著者自身による日本語レビューを、だれでも自由に閲覧・利用できる形でいち早く公開	iida@dbcls.rois.ac.jp	2013	3rd prize
