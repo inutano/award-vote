@@ -101,7 +101,7 @@ class OpenScienceAward < Sinatra::Base
   helpers do
     def app_root
       "#{env["rack.url_scheme"]}://#{env["HTTP_HOST"]}#{env["SCRIPT_NAME"]}"
-    end    
+    end
   end
   
   get "/:source.css" do
@@ -160,31 +160,14 @@ class OpenScienceAward < Sinatra::Base
   end
   
   get "/getresult" do
-    all = Ballot.all
-    pole_result = [:db, :sw, :web].map do |sym|
-      votes = all.map do |r|
-        r.send(sym).split("\t").select{|n| n != "" }
-      end
-      votes_count = {}
-      votes.flatten.each do |vote|
-        votes_count[vote] ||= 0
-        votes_count[vote] += 1
-      end
-      { category: sym.to_s, data: votes_count.sort_by{|k,v| v }.reverse }
-    end
     content_type "application/json"
-    JSON.dump(pole_result)
+    pole_result
   end
   
   get "/pole_result" do
     all = Ballot.all
     @num_of_votes = all.length
     haml :result
-  end
-  
-  get "/presult" do
-    content_type "application/json"
-    pole_result
   end
   
   get "/result" do
