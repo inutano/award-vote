@@ -38,7 +38,8 @@
         %hr
         .row
           .col-md-8.col-md-offset-2
-            %p= "みんなで決める「このデータベース・ソフトウェア・ウェブサイトがすごい！」オープン・サイエンス・アワード，たくさんのご参加をいただきありがとうござました！各部門で得票の多かった10のプロダクトを発表します！"
+            ~ markdown(:award_result, layout: false, fenced_code_blocks: true)
+
         %hr
         
         - pole_result = JSON.load(open(app_root+"/getresult"))
@@ -131,12 +132,9 @@
         %hr
         .row
           .col-md-8.col-md-offset-2
-            %p
-              = "各部門得票数上位3名の方には，10/31に東京・船堀で行われるJSBi年会でのご講演を依頼します。ぜひ，会場に足を運んで受賞者のスピーチをお聞きください。また，同時開催するクイックハック・開発コンペティション，BioHackもまだまだ応募をお待ちしております。詳しくは"
-              %a{ :href => "https://github.com/dbcls/jsbi2013/wiki/BioHack" }
-                = "こちら"
-        
-        
+            .text-center
+              %p
+                = "オープン・サイエンス・アワードは、来年も開催する予定です。お楽しみに！"
         
         
       :javascript
