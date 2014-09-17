@@ -65,7 +65,7 @@ class OpenScienceAward < Sinatra::Base
   
   def remove_winners(list)
     winners = csv_importer("winners", header=false)
-    list_of_winners = winners.map{|n| n["name"] }
+    list_of_winners = winners.map{|n| n[:name] }
     list.select{|n| !list_of_winners.include?(n.first) }
   end
   
