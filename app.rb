@@ -25,7 +25,8 @@ class OpenScienceAward < Sinatra::Base
         url: line[2],
         note: line[3],
         year: line[5],
-        winner: line[6] }
+        winner: line[6],
+        category: line[7] }
     end
   end
   
@@ -63,15 +64,24 @@ class OpenScienceAward < Sinatra::Base
     votes_count.sort_by{|k,v| v }.reverse
   end
   
-  def remove_winners(list)
+  def past_winners(dsw, option)
+    list = count_of_votes(dsw)
     winners = csv_importer("winners", header=false)
-    list_of_winners = winners.map{|n| n[:name] }
-    list.select{|n| !list_of_winners.include?(n.first) }
+    case option
+    when :get
+      winners.map do |w|
+        name = w[:name]
+        points = list.select{|n| n.first == name }.flatten.last || 0
+        [ name, points, w[:year], w[:winner], w[:category] ]
+      end
+    when :remove
+      list.select{|n| !winners.map{|n| n[:name] }.include?(n.first) }
+    end
   end
   
   def top10(dsw)
     count, prev_votes, prev_stand  = 0, 0, 0
-    remove_winners(count_of_votes(dsw)).map do |row|
+    past_winners(dsw, :remove).map do |row|
       count += 1
       name = row.first
       votes = row.last
@@ -91,11 +101,17 @@ class OpenScienceAward < Sinatra::Base
   end
   
   def pole_result
-    result = [:db,:sw,:web].map do |sym|
+    [:db,:sw,:web].map do |sym|
       { "category" => sym.to_s,
         "data" => top10(sym).compact }
     end
-    JSON.dump(result)
+  end
+  
+  def legends_result
+    [:db,:sw,:web].map do |sym|
+      { "category" => sym.to_s,
+        "data" => past_winners(sym, :get) }
+    end
   end
   
   helpers do
@@ -161,7 +177,12 @@ class OpenScienceAward < Sinatra::Base
   
   get "/getresult" do
     content_type "application/json"
-    pole_result
+    JSON.dump(pole_result)
+  end
+  
+  get "/legends" do
+    content_type "application/json"
+    JSON.dump(legends_result)
   end
   
   get "/pole_result" do

@@ -108,7 +108,29 @@
       
         %hr
         .row
-          .col-md-8.col-md-offset2
+          %h3= "以前の入賞プロダクトの今回獲得票数"
+          - legends = JSON.load(open(app_root+"/legends"))
+          - ["Database", "Software", "Web"].each_with_index do |category, i|
+            %hr
+            %h4= category
+            %table.table.table-hover
+              %thead
+                %tr
+                  %th Prize
+                  %th Title
+                  %th Points
+              %tbody
+                - legends[i]["data"].each do |record|
+                  - if record[4] == category
+                    %tr
+                    %td= record[2] + "\s" + record[3]
+                    %td
+                      %a{ :href => url_hash[record[0]] }= record[0]
+                    %td= record[1]
+                  
+        %hr
+        .row
+          .col-md-8.col-md-offset-2
             %p
               = "各部門得票数上位3名の方には，10/31に東京・船堀で行われるJSBi年会でのご講演を依頼します。ぜひ，会場に足を運んで受賞者のスピーチをお聞きください。また，同時開催するクイックハック・開発コンペティション，BioHackもまだまだ応募をお待ちしております。詳しくは"
               %a{ :href => "https://github.com/dbcls/jsbi2013/wiki/BioHack" }
