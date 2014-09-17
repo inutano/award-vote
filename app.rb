@@ -91,9 +91,9 @@ class OpenScienceAward < Sinatra::Base
   end
   
   def pole_result
-    result = {}
-    [:db,:sw,:web].map do |sym|
-      result[sym] = top10(sym).compact
+    result = [:db,:sw,:web].map do |sym|
+      { "category" => sym.to_s,
+        "data" => top10(sym).compact }
     end
     JSON.dump(result)
   end
