@@ -46,7 +46,7 @@
         .row
           - db = pole_result[0]["data"]
           %h2= "データベース部門"
-          %p= "総投票数: " + db.size.to_s
+          -# %p= "総投票数: " + db.size.to_s
           .col-md-6
             .db-bar
           .col-md-6
@@ -57,11 +57,9 @@
                   %th Title
                   %th Points
               %tbody
-                - p_db = 0
-                - db.first(10).each do |record|
+                - db.each do |record|
                   %tr
-                    - p_db += 1
-                    %td= p_db.to_s
+                    %td= record[2]
                     %td
                       %a{ :href => url_hash[record[0]] }= record[0]
                     %td= record[1]
@@ -69,7 +67,7 @@
         .row
           - sw = pole_result[1]["data"]
           %h2= "ソフトウェア部門"
-          %p= "総投票数: " + sw.size.to_s
+          -#%p= "総投票数: " + sw.size.to_s
           .col-md-6
             .sw-bar
           .col-md-6
@@ -80,11 +78,9 @@
                   %th Title
                   %th Points
               %tbody
-                - p_sw = 0
-                - sw.first(10).each do |record|
+                - sw.each do |record|
                   %tr
-                    - p_sw += 1
-                    %td= p_sw.to_s
+                    %td= record[2]
                     %td
                       %a{ :href => url_hash[record[0]] }= record[0]
                     %td= record[1]
@@ -92,7 +88,7 @@
         .row
           - web = pole_result[2]["data"]
           %h2= "ウェブ部門"
-          %p= "総投票数: " + web.size.to_s
+          -#%p= "総投票数: " + web.size.to_s
           .col-md-6
             .web-bar
           .col-md-6
@@ -103,11 +99,9 @@
                   %th Title
                   %th Points
               %tbody
-                - p_web = 0
-                - web.first(10).each do |record|
+                - web.each do |record|
                   %tr
-                    - p_web += 1
-                    %td= p_web.to_s
+                    %td= record[2]
                     %td
                       %a{ :href => url_hash[record[0]] }= record[0]
                     %td= record[1]
