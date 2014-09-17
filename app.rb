@@ -15,9 +15,9 @@ class OpenScienceAward < Sinatra::Base
   register Sinatra::ActiveRecordExtension
   set :database, ENV["DATABASE_URL"]
   
-  def csv_importer(dsw)
+  def csv_importer(dsw, header = true)
     csv_raw = open(app_root + "/#{dsw}.tsv", "r:utf-8").readlines
-    csv_head = csv_raw.shift
+    csv_head = csv_raw.shift if header
     csv_raw.map do |line_n|
       line = line_n.chomp.split("\t")
       { name: line[0],
@@ -50,7 +50,54 @@ class OpenScienceAward < Sinatra::Base
     names = array.select{|n| n != "" }
     names.size == names.uniq.size
   end
-
+  
+  def count_of_votes(dsw)
+    votes = Ballot.all.map do |r|
+      r.send(dsw).split("\t").select{|n| n!= "" }
+    end
+    votes_count = {}
+    votes.flatten.each do |vote|
+      votes_count[vote] ||= 0
+      votes_count[vote] += 1
+    end
+    votes_count.sort_by{|k,v| v }.reverse
+  end
+  
+  def remove_winners(list)
+    winners = csv_importer("winners", header=false)
+    list_of_winners = winners.map{|n| n["name"] }
+    list.select{|n| !list_of_winners.include?(n.first) }
+  end
+  
+  def top10(dsw)
+    count, prev_votes, prev_stand  = 0, 0, 0
+    remove_winners(count_of_votes(dsw)).map do |row|
+      count += 1
+      name = row.first
+      votes = row.last
+      
+      standing = if prev_votes == votes
+                   prev_stand
+                 else
+                   count
+                 end
+      
+      if count <= 10 || votes == prev_votes
+        prev_votes = votes
+        prev_stand = standing
+        [name, votes, standing]
+      end
+    end
+  end
+  
+  def pole_result
+    result = {}
+    [:db,:sw,:web].map do |sym|
+      result[sym] = top10(sym).compact
+    end
+    JSON.dump(result)
+  end
+  
   helpers do
     def app_root
       "#{env["rack.url_scheme"]}://#{env["HTTP_HOST"]}#{env["SCRIPT_NAME"]}"
@@ -133,6 +180,11 @@ class OpenScienceAward < Sinatra::Base
     all = Ballot.all
     @num_of_votes = all.length
     haml :result
+  end
+  
+  get "/presult" do
+    content_type "application/json"
+    pole_result
   end
   
   get "/result" do
