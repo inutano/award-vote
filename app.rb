@@ -124,7 +124,8 @@ class OpenScienceAward < Sinatra::Base
     sass params[:source].intern
   end
   
-  get "/" do
+  ## get "/" do
+  get "/nominated" do
     haml :index
   end
   
@@ -155,7 +156,7 @@ class OpenScienceAward < Sinatra::Base
     ballot.web = @vote[:web].join("\t")
     ballot.mail = params[:mail]
     ballot.mes = params[:message]
-    ballot.save
+    ## ballot.save
     
     haml :voted
   end
@@ -185,7 +186,8 @@ class OpenScienceAward < Sinatra::Base
     JSON.dump(legends_result)
   end
   
-  get "/pole_result" do
+  ## get "/pole_result" do
+  get "/" do
     all = Ballot.all
     @num_of_votes = all.length
     haml :result
