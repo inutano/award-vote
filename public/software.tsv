@@ -10,7 +10,7 @@ G-language System	荒川和晴さん＠慶應大	http://g-language.org/wiki/	さ
 GENIES	小寺正明さん＠京大	http://www.genome.jp/tools/genies/	教師付きネットワーク推定により遺伝子ネットワークを予測。出力として予測された遺伝子ペアのリストや、KEGG PATHWAY上へのマッピングなどが可能	川島 <kwsm@dbcls.rois.ac.jp>	2013	
 genoDive	岡本忍さん@DBCLS	http://genodive.org/	ゲノムを３次元表示する超絶美麗超高速3Dゲノムブラウザ。DASからデータを取得しGoogle Earthで見る地球のようにゲノムを俯瞰。2008年に開発されるも時代を先取りしすぎていた感あり。TogoGenomeと連携予定	片山 <ktym@dbcls.jp>	2013	
 Genome Matcher	大坪嘉行さん@東北大	http://www.ige.tohoku.ac.jp/joho/gmProject/gmhomeJP.html	比較ゲノムツール。2つのゲノムをbl2seq, blastall, MUMmerなどで比較解析し、SNPや組み替えシンテニー領域等を様々なレイアウトで可視化。アノテーションの参照や解析用の付属機能が豊富	露崎 <k.t.the.answer@hotmail.co.jp>	2013	
-GenomeJack	三菱スペースソフトウェア	http://genomejack.net/	三菱スペースソフトウェアによる大規模データでもサクサク動くゲノムブラウザ。フリー版と解析機能のついた商用版がある	片山 <ktym@dbcls.jp>	2013	
+GenomeJack	三菱スペースソフトウエア	http://genomejack.net/	三菱スペースソフトウエアによる大規模データでもサクサク動くゲノムブラウザ。フリー版と解析機能のついた商用版がある	片山 <ktym@dbcls.jp>	2013	
 GGGenome	内藤雄樹さん@DBCLS	http://gggenome.dbcls.jp/ja/	ゲノム等の塩基配列を超高速に検索するウェブサービス。BLASTで検出できないような短い配列に対応し、数塩基のミスマッチ・挿入・欠失を許容した配列検索が可能	野原 <nohara.sachio@mss.co.jp>	2013	1st prize
 inMeXes	山本泰智さん@DBCLS	http://docman.dbcls.jp/im/	PubMed/MEDLINE®に含まれる書誌情報のタイトルやアブストラクトから英語表現をインクリメンタルに検索できる。ある動詞の後に続く適切な前置詞の検索や、ある単語の前後にどういう語がくることが多いかなどの検索ができ、英文書きに重宝する	緒方<norichika.o@gmail.com>	2013	
 iPathways	SBI	http://www.ipathways.org/	CellDesignerで作ったパスウェイにiPadやiPhoneなどからアクセス、ブラウジングできるiOSネイティブアプリケーション		2013	
