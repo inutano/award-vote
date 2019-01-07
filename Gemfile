@@ -9,8 +9,3 @@ gem "haml"
 gem "sass"
 gem "redcarpet"
 gem "rack-protection"
-
-group :development do
-  gem "sqlite3"
-  gem "shotgun"
-end
